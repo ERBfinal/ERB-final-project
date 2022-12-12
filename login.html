@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <Style>
+
+    html{
+        cursor: url('./paw-print.png'), auto;
+    }
+
+    body{
+        background-color: lightgray;  
+    }
+    
+    *{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .form-box{
+        width: 380px;
+        height: 500px;
+        position: relative;
+        margin: 6% auto;
+        background-color: white ;
+        padding: 5px;
+        overflow: hidden;
+    }
+
+    .button-box{
+       width:  163px;
+       margin: 35px auto;
+       position: relative;
+       box-shadow: 0 0 20px 9px #ff61241f;
+       border-radius: 30px;
+    }
+
+    .toggle-btn{
+       padding: 10px;
+       cursor: pointer;
+       background: transparent;
+       border: 0;
+       outline: none;
+       position: relative; 
+    }
+    
+    #btn{
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 88px;
+        height: 100%;
+        background: linear-gradient(to right, #FE7254 ,#ffad06);
+        border-radius: 30px;
+        transition: .5s;
+    }
+
+    img{
+        width: 30px;
+        margin: 1px 30px 1px 50px;
+        box-shadow: 0 0 20px 0 #7f7f7f3d;
+        border-radius: 50%;
+    }
+
+    .input-group{
+        top:180px;
+        position: absolute;
+        width: 280px;
+        transition: .5s;
+    }
+
+    .input-field{
+        width: 100;
+        padding: 10px 0;
+        margin: 5px 0;
+        border-left:0;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 1px solid #999;
+        outline:none;
+        background: transparent;
+        
+    }
+
+    .submit-btn{
+        width: 85%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin: 40px -20px;
+        background: linear-gradient(to right, #FE7254 ,#ffad06);
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+        cursor: url('./paw-print.png'), auto;
+    }
+
+   /* .check-box{
+        margin: 30px 10px 30px 0;
+    }*/
+     span{
+        color: #777;
+        font-size: 12px;
+        bottom: 96px;
+        position: absolute;
+
+     }
+
+     #login{
+        left: 80px;
+     }
+
+     #register{
+        left: 400px;
+     }
+    </Style>
+</head>
+<body>
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn"  onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="blank;"> <img src="./facebook.png"></a>
+            <a href="https://www.google.com/" target="blank;"><img src="./google.png"></a>
+            <a href="https://www.twitter.com/" target="blank;"><img src="./twitter.png"></a>
+        </div>
+        <form id="login"  class="input-group" action="./loginSuccess.html" method="get">
+            <input type="text" class="input-field" name="username" placeholder="User Id" required>
+            <input type="text" class="input-field" name="password" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Log in</button>
+        </form>
+        <form id="register" class="input-group" action="./login.html">
+            <input type="text" class="input-field" placeholder="User Id" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required> 
+            <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+
+   <script>
+
+    let form = document.querySelector("#login");
+        let username = form.elements[0]
+        let password = form.elements[1]
+        form.addEventListener("submit", function(event) {
+            if (username.value == "petpatrol") {
+                username.style.borderColor = "initial";
+                if (password.value == "1234") {
+                    password.style.borderColor = "initial";
+                    form.submit()
+                } else {
+                    Invalidinput("password");
+                    event.preventDefault();
+                }
+            } else {
+                Invalidinput("username");
+                event.preventDefault();
+            };
+        });
+
+        function Invalidinput(input) {
+            if (input == "username") {
+                username.style.borderColor = "red";
+                username.value = "";
+                password.value = "";
+                username.placeholder = "Invalid username";
+            } else {
+                password.style.borderColor = "red";
+                password.value = "";
+                password.placeholder = "Invalid password";
+            };
+        };
+        var x= document.getElementById("login");
+        var y= document.getElementById("register");
+        var z= document.getElementById("btn");
+
+       function register(){
+            x.style.left = "-400px";
+            y.style.left = "100px";
+            z.style.left = "75px";
+        }
+        function login(){
+            x.style.left = "100px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+    </script>
+</body>
+</html>
