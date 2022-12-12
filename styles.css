@@ -1,0 +1,110 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Futura", "Nunito Sans", "Questrial";
+}
+
+p {
+  font-family: "helvetica", "Jost", "Arimo";
+}
+
+/* Navigation Bar */
+#header .navbar {
+  padding: 30px;
+}
+
+.navbar {
+  background-color: #fff;
+  opacity: 95%
+}
+
+.sticky-top {
+  position: relative;
+}
+
+.nav-link {
+  color: #0658B1;
+}
+
+.nav-link:hover {
+  color: #FE7254;
+}
+
+.nav-item {
+  font-family: "Futura", "Nunito Sans", "Questrial";
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: #0658B1;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #fff;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+}
+
+.fa {
+  color: #0658B1;
+}
+
+/* booking section */
+#booking {
+  padding: 110px 50px 0px 50px;
+}
+
+.title-image {
+  width: 100%;
+}
+
+.big-heading {
+  font-family: "Futura", "Nunito Sans", "Questrial";
+}
+
+.col-lg-6 .btn {
+  background-color: #FE7254;
+  border-color: #FE7254;
+  color: #fff;
+}
+
+/* different section */
+#different {
+  padding: 50px 50px;
+}
+
+.different-column {
+  padding: 3% 2%;
+}
+
+/* do section */
+#do {
+  padding: 50px 50px;
+}
+
+/* mission section */
+#mission {
+  padding: 50px 50px;
+}
+
+/* location section */
+#location {
+  padding: 50px 50px;
+}
+
+/* footer */
+.footer-section {
+  background-color: #a4b2bf;
+  color: #fff;
+  padding: 50px 50px;
+}
+
+/* button */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  color: #fff;
+  background-color: #FE7254;
+}
