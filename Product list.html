@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+   
+    <!--Font Awesome 5 Icons  -->
+    <script src='https://kit.fontawesome.com/ac9b1cd01a.js' crossorigin='anonymous'></script>
+    <title>Product List</title>
+
+    <style>
+    .carousel .carousel-item {
+     height: 500px;
+    }
+
+    .carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+    }
+
+    * {
+    box-sizing: border-box;
+    font-family: Verdana;
+    }
+
+    .card{
+      width: 350px;
+      text-align: center;
+    }
+
+    .card-body{
+      width: 350px;
+      height: 350px;
+    }
+
+    .card-footer{
+      width: 350px;
+      height: 50px;
+    }
+
+    /* @media only screen and (max-width: 600px) { 
+     .col { 
+     display: block;
+     width: 20%;
+     }
+    }*/
+
+    </style>
+</head>
+<body>
+    <div class="top-header-wrapper">
+        <div class="top header">
+            <div class="heaser-txt middle-hdr text-center">
+                <i class="fa-solid fa-truck-fast"></i>
+                Free shipping on orders over HKD500
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel -->
+<div class="container-fluid">
+    <div id="slider1" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li class="active" data-target="#slider1" data-slide-to="0"></li>
+        <li data-target="#slider1" data-slide-to="1"></li>
+        <li data-target="#slider1" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block img-fluid" src="img/Carousel img/Caro01.jpg" alt="First Slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="display-3 fw-bold" id="scrollspyHeading1">Shop now</h3>
+            <p class="fs-6 fw-light">We care your pets!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="img/Carousel img/Caro02.jpg" alt="Second Slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="display-3 fw-bold" id="scrollspyHeading1">Looking for snacks?</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="Img/Carousel img/Caro04.jpg" alt="Third Slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="display-3 fw-bold" id="scrollspyHeading1">Looking for toys?</h3>
+          </div>
+        </div>
+        <a href="#slider1" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a href="#slider1" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+<br>
+
+<!-- Cat Product Lists -->
+<div class="container">
+  <div class="row">
+   <div class="col d-flex justify-content-center">
+    <a href="#cat product lists"><button type="button" class="btn btn-light btn-lg"><i class="fa-regular fa-cat"></i>For your cat</button></a>
+   </div>
+   <div class="col d-flex justify-content-center">
+    <a href="#dog product lists"><button type="button" class="btn btn-light btn-lg"><i class="fa-solid fa-dog"></i>For your dog</button></a>
+   </div>
+  </div>
+</div>
+<br>
+
+    <div class="container d-flex justify-content-center mt-50 mb-50" id="cat product lists">
+
+        <div class="row">
+          <div class="col-md-4 mt-2 d-flex align-items-stretch justify-content-center">
+
+            <div class="card">
+              <div class="card-body">
+
+                  <img src="Img/Product img/Cat/Product10.PNG" class="card-img-top" width="300" height="300" alt="NORTHWEST NATURALS CHICKEN">
+
+              </div>
+
+              <div class="card-body bg-light text-centre">
+                  <h5 class="card-title mb-2">
+                    <a href="#" class="text-primary mb-2">NORTHWEST NATURALS 凍乾貓糧系列 - 雞 11oz</a>
+                  </h5>
+
+                <p class="card-text">
+
+                  <a href="#" class="text-muted">Cat food</a>
+                  <h6 class="'mb-0 font-weight-bold">HKD 378.00</h6>
+
+                  <div>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  </div>
+
+                  <div class="text-muted mb-3">2 reviews</div>
+
+                </p>
+
+                <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-4 mt-2 d-flex align-items-stretch justify-content-center">
+            
+            <div class="card">
+              <div class="card-body">
+
+                  <img src="Img/Product img/Cat/Product12.PNG" class="card-img-top" width="300px" height="300px" alt="FIDOBIOTICS Meowbiotic">
+
+              </div>
+
+              <div class="card-body bg-light text-centre">
+                <div class="mb-2">
+                  <h5 class="card-title">
+                    <a href="#" class="text-primary mb-2">FIDOBIOTICS Meowbiotics 排毛球+消化腸道貓用益生菌 (周打魚湯口味)</a>
+                  </h5>
+
+                 <p class="card-text">
+
+                  <a href="#" class="text-muted">Cat biotics</a>
+
+                </div>
+
+                <h6 class="'mb-0 font-weight-bold">HKD 186.00</h6>
+
+                <div>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="text-muted mb-3">5 reviews</div>
+
+                <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-4 mt-2 d-flex align-items-stretch justify-content-center">
+            
+            <div class="card">
+              <div class="card-body">
+
+                  <img src="Img/Product img/Cat/Product15.PNG" class="card-img-top" width="300px" height="300px" alt="BEAPHAR">
+
+              </div>
+
+              <div class="card-body bg-light text-centre">
+                <div class="mb-2">
+                  <h5 class="card-title">
+                    <a href="#" class="text-primary mb-2">BEAPHAR 力圖幼貓奶粉 250g</a>
+                  </h5>
+
+                  <a href="#" class="text-muted">Cat food</a>
+
+                </div>
+
+                <h6 class="'mb-0 font-weight-bold">HKD 130.00</h6>
+
+                <div>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="text-muted mb-3">1 reviews</div>
+
+                <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+
+              </div>
+            </div>
+
+          </div>
+
+          
+          <div class="col-md-4 mt-2 d-flex align-items-stretch justify-content-center">
+            
+            <div class="card">
+              <div class="card-body">
+
+                  <img src="Img/Product img/Cat/Product16.PNG" class="card-img-top" width="300" height="300" alt="PETKIT Pura Max">
+
+              </div>
+
+              <div class="card-body bg-light text-centre">
+                <div class="mb-2">
+                  <h5 class="card-title">
+                    <a href="#" class="text-primary mb-2">PETKIT Pura Max 智能貓廁所 (含落砂墊, 淨化液, 儲便袋</a>
+                  </h5>
+
+                  <a href="#" class="text-muted">Cat toilet</a>
+
+                </div>
+
+                <h6 class="'mb-0 font-weight-bold">HKD 2,499.00</h6>
+
+                <div>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="text-muted mb-3">6 reviews</div>
+
+                <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-md-4 mt-2 d-flex align-items-stretch justify-content-center">
+            
+            <div class="card">
+              <div class="card-body">
+
+                  <img src="Img/Product img/Cat/Product17.PNG" class="card-img-top" width="300" height="300" alt="VETRESKA1">
+
+              </div>
+
+              <div class="card-body bg-light text-centre">
+                <div class="mb-2">
+                  <h5 class="card-title">
+                    <a href="#" class="text-primary mb-2">VETRESKA 麋鹿貓抓球</a>
+                  </h5>
+
+                  <a href="#" class="text-muted">Cat toy</a>
+
+                </div>
+
+                <h6 class="'mb-0 font-weight-bold">HKD 249.00</h6>
+
+                <div>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="text-muted mb-3">12 reviews</div>
+
+                <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-4 mt-2 d-flex align-items-stretch justify-content-center">
+            
+            <div class="card">
+              <div class="card-body">
+
+                  <img src="Img/Product img/Cat/Product18.PNG" class="card-img-top" width="300" height="300" alt="VETRESKA2">
+
+              </div>
+
+              <div class="card-body bg-light text-centre">
+                <div class="mb-2">
+                  <h5 class="card-title">
+                    <a href="#" class="text-primary mb-2">VETRESKA 水果貓爬架</a>
+                  </h5>
+
+                  <a href="#" class="text-muted">Cat toy</a>
+
+                </div>
+
+                <h6 class="'mb-0 font-weight-bold">HKD 699.00</h6>
+
+                <div>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="text-muted mb-3">4 reviews</div>
+
+                <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+    </div>
+    
+      <!-- Dog product lists -->
+
+      <div class="container d-flex justify-content-center mt-50 mb-50" id="dog product lists">
+
+        <div class="row">
+          <div class="col-md-4 mt-2 d-flex align-items-stretch justify-content-center">
+
+            <div class="card">
+              <div class="card-body">
+
+                  <img src="Img/Product img/Dog/Product01.PNG" class="card-img-top" width="300" height="300" alt="BUSTER">
+
+              </div>
+
+              <div class="card-body bg-light text-centre">
+                <div class="mb-2">
+                  <h5 class="card-title">
+                    <a href="#" class="text-primary mb-2">BUSTER 犬用記憶泡棉床</a>
+                  </h5>
+
+                  <a href="#" class="text-muted">Dog beds & furniture</a>
+
+                </div>
+
+                <h6 class="'mb-0 font-weight-bold">HKD 1,138.00</h6>
+
+                <div>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="text-muted mb-3">9 reviews</div>
+
+                <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-4 mt-2 d-flex align-items-stretch justify-content-center">
+            
+            <div class="card">
+              <div class="card-body">
+
+                  <img src="Img/Product img/Dog/Product02.PNG" class="card-img-top" width="300" height="300" alt="STELLA & CHEWY'S">
+
+              </div>
+
+              <div class="card-body bg-light text-centre">
+                <div class="mb-2">
+                  <h5 class="card-title">
+                    <a href="#" class="text-primary mb-2">TELLA & CHEWY'S 凍乾生內臟小食系列 - 雞胸 2.75oz</a>
+                  </h5>
+
+                  <a href="#" class="text-muted">Dog food</a>
+
+                </div>
+
+                <h6 class="'mb-0 font-weight-bold">HKD 99.00</h6>
+
+                <div>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="text-muted mb-3">2 reviews</div>
+
+                <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-4 mt-2 d-flex align-items-stretch justify-content-center">
+            
+            <div class="card">
+              <div class="card-body">
+
+                  <img src="Img/Product img/Dog/Product05.PNG" class="card-img-top" width="300" height="300" alt="FIDOBIOTICS Good Guts">
+
+              </div>
+
+              <div class="card-body bg-light text-centre">
+                <div class="mb-2">
+                  <h5 class="card-title">
+                    <a href="#" class="text-primary mb-2">FIDOBIOTICS Good Guts 小型狗專用 排氣+消化腸道益生菌 (椰子花生醬口味)</a>
+                  </h5>
+
+                  <a href="#" class="text-muted">Dog biobic</a>
+
+                </div>
+
+                <h6 class="'mb-0 font-weight-bold">HKD 186.00</h6>
+
+                <div>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="text-muted mb-3">10 reviews</div>
+
+                <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+
+              </div>
+            </div>
+
+          </div>
+
+          
+          <div class="col-md-4 mt-2 d-flex align-items-stretch justify-content-center">
+            
+            <div class="card">
+              <div class="card-body">
+
+                  <img src="Img/Product img/Dog/Product06.PNG" class="card-img-top" width="300" height="300" alt="GIGWI Plush Friendz">
+
+              </div>
+
+              <div class="card-body bg-light text-centre">
+                <div class="mb-2">
+                  <h5 class="card-title">
+                    <a href="#" class="text-primary mb-2">GIGWI Plush Friendz 拉扯系列 - 拉扯大象</a>
+                  </h5>
+
+                  <a href="#" class="text-muted">Dog toy</a>
+
+                </div>
+
+                <h6 class="'mb-0 font-weight-bold">HKD 69.00</h6>
+
+                <div>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="text-muted mb-3">6 reviews</div>
+
+                <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-md-4 mt-2 d-flex align-items-stretch justify-content-center">
+            
+            <div class="card">
+              <div class="card-body">
+
+                  <img src="Img/Product img/Dog/Product09.PNG" class="card-img-top" width="300" height="300" alt="Wholistic Pet Organics">
+
+              </div>
+
+              <div class="card-body bg-light text-centre">
+                <div class="mb-2">
+                  <h5 class="card-title">
+                    <a href="#" class="text-primary mb-2">Wholistic Pet Organics 天然杜蟲滅蟲 DE 矽藻土粉</a>
+                  </h5>
+
+                  <a href="#" class="text-muted">Dog wellbeing</a>
+
+                </div>
+
+                <h6 class="'mb-0 font-weight-bold">HKD 113.00</h6>
+
+                <div>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="text-muted mb-3">14 reviews</div>
+
+                <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-4 mt-2 d-flex align-items-stretch justify-content-center">
+            
+            <div class="card">
+              <div class="card-body">
+
+                  <img src="Img/Product img/Dog/Product07.PNG" class="card-img-top" width="300" height="300"alt="STELLA & CHEWY'S">
+
+              </div>
+
+              <div class="card-body bg-light text-centre">
+                <div class="mb-2">
+                  <h5 class="card-title">
+                    <a href="#" class="text-primary mb-2">STELLA & CHEWY'S 凍乾生肉功能配方狗糧 - 有助關節健康 (放養雞配方) 13oz</a>
+                  </h5>
+
+                  <a href="#" class="text-muted">Dog food</a>
+
+                </div>
+
+                <h6 class="'mb-0 font-weight-bold">HKD 398.00</h6>
+
+                <div>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="text-muted mb-3">7 reviews</div>
+
+                <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-cart-plus"></i>Add to cart</button>
+
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
