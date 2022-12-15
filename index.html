@@ -11,16 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Jost&family=Nunito+Sans&family=Questrial&display=swap" rel="stylesheet">
   <!-- favicon -->
-  <link rel="icon" href="img/favicon.ico">
+  <link rel="icon" href="img/logo/favicon.ico">
   <!-- bootstrap script 4-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
-
-
-
-
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/c48ddcf42f.js" crossorigin="anonymous"></script>
 
@@ -28,12 +21,12 @@
 </head>
 
 <body>
-
+  <!-- navbar -->
   <section id="header">
     <nav class="navbar navbar-expand-lg fixed-top">
 
       <a class="navbar-brand" href="#">
-        <img src="img/logo001.png" width="150" alt="">
+        <img src="img/logo/logo001.png" width="150" alt="">
       </a>
 
 
@@ -46,7 +39,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Book Now</a>
+            <a class="nav-link" href="booking.html">Book Now</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -61,7 +54,11 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Shop</a>
+            <a class="nav-link" href="productList.html">Product</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="shoppingCart.html">Shop</a>
           </li>
 
           <li class="nav-item">
@@ -74,14 +71,18 @@
 
 
         <form class="form-inline my-2 my-lg-0 ml-auto">
-          <button class="btn btn-outline-success mr-sm-2" type="submit"><a href="login.html">Login</a></button>
+          <button class="btn btn-outline-light mr-sm-2" type="submit"><a href="login.html">Login</a></button>
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn mr-sm-2" type="submit" style="color: #FE7254;">Search</button>
+          <button class="btn btn-outline-light mr-sm-2" type="submit"><a href="login.html">Search</a></button>
         </form>
       </div>
 
 
     </nav>
+
+
+
+
 
 
 
@@ -97,7 +98,7 @@
   <section id="booking">
     <div class="row">
       <div class="col-lg-6">
-        <img class="title-image" src="img/vetclinic-001.jpg" alt="">
+        <img class="title-image" src="img/Landing Page img/vetclinic-001.jpg" alt="">
       </div>
 
       <div class="col-lg-6">
@@ -199,7 +200,7 @@
 
     <div class="row">
       <div class="col-lg-6">
-        <img class="title-image" src="img/vetclinic-001.jpg" alt="">
+        <img class="title-image" src="img/Landing Page img/vetclinic-001.jpg" alt="">
       </div>
 
       <div class="col-lg-6">
@@ -225,8 +226,8 @@
     </div>
   </section>
 
+  <!-- back-to-top button -->
   <section id="back-to-top">
-
     <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
       <i class="fas fa-arrow-up"></i>
     </button>
@@ -237,28 +238,38 @@
   <footer class="footer-section" id="footer">
 
     <div class="row">
-      <div class="col-lg-6 text-right">
-        <img src="img/logo001.png" width="300" alt="">
+
+      <div class="col-lg-6 text-right align-self-center">
+        <img src="img/logo/logo002.png" width="200" alt="">
       </div>
 
       <div class="col-lg-6">
-        <h6 class="big-heading">CONTACT US</h6>
-        <p class="lead">About Us</p>
-        <p class="lead">Contact Form</p>
-        <p class="lead">WhatsApp Us</p>
-        <i class="footericon fa-brands fa-twitter"></i>
-        <i class="footericon fa-brands fa-facebook"></i>
-        <i class="footericon fa-brands fa-instagram"></i>
-        <i class="footericon fa-solid fa-envelope"></i>
-        <p>© Copyright TinDog</p>
+        <div class="footer-heading">
+          <h5>CONTACT US</h5>
+        </div>
+        <div class="footer-text">
+          <span>About Us</span><br>
+          <span>Contact Form</span><br>
+          <span>WhatsApp Us</span><br>
+        </div>
+        <div>
+          <div class="align-bottom">
+            <i class="footericon fa-brands fa-twitter fa-xl pr-3"></i>
+            <i class="footericon fa-brands fa-facebook fa-xl pr-3"></i>
+            <i class="footericon fa-brands fa-instagram fa-xl pr-3"></i>
+            <span class="footer-span">© Pet Patrol 2022</span>
+          </div>
+        </div>
       </div>
 
+    </div>
 
 
   </footer>
-<script src="index.js" charset="utf-8"></script>
 
-</script>
+  <script src="index.js" charset="utf-8"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 
 </html>
