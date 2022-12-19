@@ -11,10 +11,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <Style>
 
-    html{
-        cursor: url('img/paw-print.png'), auto;
-    }
-
     body{
         background-color: lightgray;  
     }
@@ -119,37 +115,41 @@
      #register{
         left: 400px;
      }
+
+
     </Style>
 </head>
 <body>
+
     <div class="form-box">
         <div class="button-box">
             <div id="btn"></div>
             <button type="button" class="toggle-btn"  onclick="login()">Log In</button>
             <button type="button" class="toggle-btn" onclick="register()">Register</button>
         </div>
+        <!-- social media icon -->
         <div class="social-icons">
             <a href="https://www.facebook.com/" target="blank;"> <img src="img/facebook.png"></a>
             <a href="https://www.google.com/" target="blank;"><img src="img/google.png"></a>
             <a href="https://www.twitter.com/" target="blank;"><img src="img/twitter.png"></a>
         </div>
+        <!-- login form -->
         <form id="login"  class="input-group" action="./loginSuccess.html" method="get">
             <input type="text" class="input-field" name="username" placeholder="User Id" required>
             <input type="text" class="input-field" name="password" placeholder="Enter Password" required>
-            
             <button type="submit" class="submit-btn">Log in</button>
         </form>
+        <!-- registration form -->
         <form id="register" class="input-group" action="./login.html">
             <input type="text" class="input-field" placeholder="User Id" required>
             <input type="email" class="input-field" placeholder="Email Id" required>
             <input type="text" class="input-field" placeholder="Enter Password" required> 
-            
             <button type="submit" class="submit-btn">Register</button>
         </form>
     </div>
 
    <script>
-
+    // login success
     let form = document.querySelector("#login");
         let username = form.elements[0]
         let password = form.elements[1]
@@ -181,6 +181,8 @@
                 password.placeholder = "Invalid password";
             };
         };
+
+        // toggle lonin and registration form
         var x= document.getElementById("login");
         var y= document.getElementById("register");
         var z= document.getElementById("btn");
