@@ -15,7 +15,6 @@ span {
   overflow: hidden;
   position: fixed;
   left: 50%;
-  /* margin-left: -75px; */
   transform: translate(-50%, 100%);
   z-index: 2;
 }
