@@ -1,19 +1,353 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <title>Pet Patrol</title>
+  <!-- css stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Jost&family=Nunito+Sans&family=Questrial&display=swap" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="img/logo/favicon.ico">
+  <!-- bootstrap script 4-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/c48ddcf42f.js" crossorigin="anonymous"></script>
+<!--Google icon -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-<Style>
+<style>
+    h1, h2, h3, h4, h5, h6 {
+  font-family: "Futura", "Nunito Sans", "Questrial";
+}
 
-    *{
+p {
+  font-family: "helvetica", "Jost", "Arimo";
+  font-size: 12px;
+}
+
+span {
+  font-family: "helvetica", "Jost", "Arimo";
+  font-size: 12px;
+}
+
+/* header navbar */
+.logo {
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  z-index: 2;
+}
+
+/* -------------------------------------------------------- */
+/* Dropdown Menu inside a Navigation Bar */
+.topNavbar {
+  /* overflow: hidden; */
+  background-color: #fff;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 95%;
+  font-family: "Futura", "Nunito Sans", "Questrial";
+  font-size: 20px;
+}
+
+.topNavbar a {
+  float: left;
+  color: #0658B1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topNavbar a:hover {
+  text-decoration: none;
+}
+
+.topDropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* service button */
+.topDropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: #0658B1;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.topNavbar a:hover, .topDropdown:hover .dropbtn {
+  color: #FE7254;
+}
+
+.topDropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0658B1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.topDropdown-content a {
+  float: none;
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topDropdown-content a:hover {
+  color: #FE7254;
+  text-decoration: none;
+}
+
+.topDropdown:hover .topDropdown-content {
+  display: block;
+}
+
+/* login btn----------------------------- */
+.login-container {
+  float: right;
+  display: inline-block;
+  padding: 14px 0px;
+}
+
+.btnLogin {
+  /* -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px; */
+  font-family: "Futura", "Nunito Sans", "Questrial";
+  border: 1px solid #DCDCDC;
+  color: #0658B1;
+  font-size: 14px;
+  padding: 6px 15px;
+  background: #fff;
+  text-decoration: none;
+}
+
+.btnLogin:hover {
+  background: #fff;
+  color: #FE7254;
+  text-decoration: none;
+}
+
+/* login btn----------------------------- */
+/* search bar-------------------------------- */
+.topNavbar .search-container {
+  -webkit-border-radius: 1;
+  -moz-border-radius: 1;
+  border-radius: 1px;
+  float: right;
+  margin-right: 10px;
+  padding: 14px 0px;
+}
+
+.topNavbar input[type=text] {
+  /* padding: 6px; */
+  font-size: 14px;
+  border: none;
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+  border-right: 1px solid #DCDCDC;
+  font-family: helvetica;
+  position: inherit;
+  float: right;
+  padding: 6px 0px;
+}
+
+.topNavbar .search-container button {
+  float: left;
+  font-size: 14px;
+  border: none;
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+  border-left: 1px solid #DCDCDC;
+  cursor: pointer;
+  padding: 6px 10px;
+  background-color: #fff;
+}
+
+.topNavbar .search-container button:hover {
+  background: #DCDCDC;
+}
+
+/* search bar-------------------------------- */
+/* -------------------------------------------------------- */
+/* Responsive topNavbar */
+.topNavbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .topNavbar a:not(.item--clear), .topDropdown .dropbtn, .search-container, .login-container {
+    display: none;
+  }
+
+  .topNavbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topNavbar.responsive {
+    position: relative;
+  }
+
+  .topNavbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topNavbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topNavbar.responsive .topDropdown {
+    float: none;
+  }
+
+  .topNavbar.responsive .topDropdown-content {
+    position: relative;
+  }
+
+  .topNavbar.responsive .topDropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* searchbar V1--------------------------- */
+  /* .topNavbar.responsive .search-container {
+    float: none;
+    display: block;
+    text-align: left;
+  } */
+  /* searchbar V2--------------------------- */
+  .topNavbar.responsive .search-container {
+    float: none;
+    display: block;
+  }
+
+  .topNavbar.responsive .search-container button {
+    float: none;
+    /* display: block; */
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .topNavbar.responsive input[type=text] {
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+
+  /* searchbar V2--------------------------- */
+  .topNavbar.responsive .login-container {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* booking section */
+/* #booking {
+  padding: 130px 50px 0px 50px;
+}
+
+.title-image {
+  width: 100%;
+}
+
+.big-heading {
+  font-family: "Futura", "Nunito Sans", "Questrial";
+}
+
+.col-lg-6 .btn {
+  background-color: #FE7254;
+  border-color: #FE7254;
+  color: #fff;
+}
+
+/* different section
+#different {
+  padding: 50px 50px;
+}
+
+.different-column {
+  padding: 3% 2%;
+}*/
+
+/* do section 
+#do {
+  padding: 50px 50px;
+}*/
+
+/* mission section 
+#mission {
+  padding: 50px 50px;
+}*/
+
+/* location section
+#location {
+  padding: 50px 50px;
+} */
+
+/* footer */
+.footer-section {
+  background-color: #a4b2bf;
+  color: #fff;
+  padding: 80px 50px;
+}
+
+.footer-heading {
+  padding-bottom: 10px;
+}
+
+.footer-text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-icon {
+  display: inline-block;
+  padding-top: 15px;
+}
+
+.footer-text2 {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+/* button */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  color: #fff;
+  background-color: #FE7254;
+}
+
+*{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         
     }
@@ -24,13 +358,13 @@
        font-family: 'Nunito Sans', sans-serif;
     }
     
-    h5{
+    .home h5{
         text-align: center;
         padding: 50px;
         font-family: 'Nunito Sans', sans-serif;
     }
 
-    img{
+    .home img{
         width: 90%;
         height: 60%;
         display: block;
@@ -41,13 +375,56 @@
         text-align: justify;
     }
 
-</Style>
-
+</style>
 </head>
+
 <body>
+  <!-- navbar -->
+  <section id="header">
+
+    <div class="logo"><img src="img/logo/logo001.png" width="150" alt=""></div>
+
+    <div class="topNavbar" id="myTopNavbar">
+      <a href="#bookNow">Book Now</a>
+      <div class="topDropdown">
+        <button class="dropbtn">Service
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="topDropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <a href="productList.html">Product</a>
+      <a href="shoppingCart.html">Shop</a>
+      <a href="aboutUs.html">About Us</a>
+      <a href="javascript:void(0);" class="icon" onclick="myTopNavbarF()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <div class="login-container">
+        <form action="login.html">
+          <button type="submit" class="btnLogin">Login</button>
+        </form>
+      </div>
+
+
+      <!-- Responsive Search Bar -->
+      <div class="search-container">
+        <form action="https://www.google.com">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div style="padding:130px 50px 0 50px;">
     <h1>Hello,We're Pet Patrol!</h1>
-    <img src="img/vet.jpg" alt="vet">
-    <h5>We're making work meaningful, for everyone, everywhere!</h5>\
+    <div class="home"> <img src="img/vet.jpg" alt="vet">
+    <h5>We're making work meaningful, for everyone, everywhere!</h5>
+    </div>
 
 
     <!-- Jumbotron -->
@@ -58,6 +435,7 @@
             , like wellness exams, vaccines and spray, as well as surgeries, dental cleanings, and international health 
             certificates.
         </h6>
+        <br><br>
         <h6>
             This range not only benefits our clients,but also our medical team, 
             for whom a broad case mix provides opportunities to learn, grow and practice at the top of their license. Diverse cases keep the team engaged and deepens their passion for veterinary medicine.
@@ -78,12 +456,11 @@
         <p class="card-text" style="text-align: left; margin:2px;"><strong>Qualification:</strong> <br> QVN (Cert. IV in Veterinary Nursing), RVN (AVANT, VNCA) <br><br>
         <strong>Experience:</strong><br> 10+ years in Emergency Hospital <br><br>
         <strong>Speciality:</strong> <br> Feline, VN training and mentoring</p>
-        <div class="d-flex justify-content-center">
-        </div>
+        
     </div>
     </div>
     </div>
-</div>
+    </div>
     
     <div class="col mb-4">
     <div class="card text-center" style="width:300px; margin:10px;">
@@ -93,14 +470,12 @@
     <p class="card-text" style="text-align: left; margin:2px;"><strong>Qualification:</strong> <br> QVN (Cert. IV in Veterinary Nursing), RVN (AVANT, VNCA) <br><br>
         <strong>Experience:</strong><br> 20+ years in small animal practices <br><br>
         <strong>Speciality:</strong> <br>  Primary care, Emergencies, Coaching/Mentoring</p>
-    <div class="d-flex justify-content-center">
-
-        </div>
+    
     </div>
     </div>
     </div>
-</div>
-    </div>
+    
+  </div>
     <a href="booking.html" button type="submit" class="btn mt-auto" style="background: #FE7254 ;margin:0px 227px;">Book Now</a>
     
     <h1>Feedbacks!</h1>
@@ -141,8 +516,107 @@
         </div>
     </div>
 
-   
+  </div>
 
-   
+
+
+<!-- Footer -->
+
+<footer class="footer-section" id="footer">
+
+  <div class="row">
+
+    <div class="col-lg-6 text-right align-self-center">
+      <img src="img/logo/logo002.png" width="200" alt="">
+    </div>
+
+    <div class="col-lg-6">
+
+      <div class="footer-heading">
+        <h5>CONTACT US</h5>
+      </div>
+
+      <div class="footer-text">
+        <span>About Us</span><br>
+        <span>Contact Form</span><br>
+        <span>WhatsApp Us</span><br>
+      </div>
+
+      <div>
+        <div class="footer-icon align-bottom">
+          <i class="footericon fa-brands fa-twitter fa-xl pr-3"></i>
+          <i class="footericon fa-brands fa-facebook fa-xl pr-3"></i>
+          <i class="footericon fa-brands fa-instagram fa-xl pr-3"></i>
+        </div>
+
+        <div class="footer-text2">© Pet Patrol 2022
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!-- back-to-top button -->
+  <section id="back-to-top">
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </section>
+
+
+
+  
+
+<script>
+// Responsive Topnav
+
+function myTopNavbarF() {
+  var x = document.getElementById("myTopNavbar");
+  if (x.className === "topNavbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "topNavbar";
+  }
+}
+
+// -------------------------------------------------------------------------
+
+
+
+//back-to-top button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
 </body>
+
 </html>
