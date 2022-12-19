@@ -1,4 +1,19 @@
-//Get the button
+// Responsive Topnav
+
+function myTopNavbarF() {
+  var x = document.getElementById("myTopNavbar");
+  if (x.className === "topNavbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "topNavbar";
+  }
+}
+
+// -------------------------------------------------------------------------
+
+
+
+//back-to-top button
 let mybutton = document.getElementById("btn-back-to-top");
 
 // When the user scrolls down 20px from the top of the document, show the button

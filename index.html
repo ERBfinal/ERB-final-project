@@ -23,68 +23,48 @@
 <body>
   <!-- navbar -->
   <section id="header">
-    <nav class="navbar navbar-expand-lg fixed-top">
 
-      <a class="navbar-brand" href="#">
-        <img src="img/logo/logo001.png" width="150" alt="">
+    <div class="logo"><img src="img/logo/logo001.png" width="150" alt=""></div>
+
+    <div class="topNavbar" id="myTopNavbar">
+      <a href="#bookNow">Book Now</a>
+      <div class="topDropdown">
+        <button class="dropbtn">Service
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="topDropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <a href="#product">Product</a>
+      <a href="#shop">Shop</a>
+      <a href="#aboutUs">About Us</a>
+      <a href="javascript:void(0);" class="icon" onclick="myTopNavbarF()">
+        <i class="fa fa-bars"></i>
       </a>
 
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="" role="button"><i class="fa fa-bars fa-xl" aria-hidden="true"></i></span>
-      </button>
-
-
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="booking.html">Book Now</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-              Service Scope
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="productList.html">Product</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="shoppingCart.html">Shop</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="aboutUs.html">About Us</a>
-          </li>
-
-        </ul>
-
-
-
-
-        <form class="form-inline my-2 my-lg-0 ml-auto">
-          <button class="btn btn-outline-light mr-sm-2" type="submit"><a href="login.html">Login</a></button>
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light mr-sm-2" type="submit"><a href="login.html">Search</a></button>
+      <div class="login-container">
+        <form action="/login.html">
+          <button type="submit" class="btnLogin">Login</button>
         </form>
       </div>
 
 
-    </nav>
+      <!-- Responsive Search Bar -->
+      <div class="search-container">
+        <form action="https://www.google.com">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
 
 
 
 
 
-
+    </div>
 
 
   </section>
@@ -95,10 +75,11 @@
 
 
 
+
   <section id="booking">
     <div class="row">
       <div class="col-lg-6">
-        <img class="title-image" src="img/landingPage/vetclinic-001.jpg" alt="">
+        <img class="title-image" src="img/landingpage/vetclinic-001.jpg" alt="">
       </div>
 
       <div class="col-lg-6">
@@ -200,7 +181,7 @@
 
     <div class="row">
       <div class="col-lg-6">
-        <img class="title-image" src="img/landingPage/vetclinic-001.jpg" alt="">
+        <img class="title-image" src="img/landingpage/vetclinic-001.jpg" alt="">
       </div>
 
       <div class="col-lg-6">
@@ -253,12 +234,14 @@
           <span>WhatsApp Us</span><br>
         </div>
         <div>
-          <div class="align-bottom">
+          <div class="footer-icon align-bottom">
             <i class="footericon fa-brands fa-twitter fa-xl pr-3"></i>
             <i class="footericon fa-brands fa-facebook fa-xl pr-3"></i>
             <i class="footericon fa-brands fa-instagram fa-xl pr-3"></i>
-            <span class="footer-span">© Pet Patrol 2022</span>
           </div>
+          <div class="footer-text2">© Pet Patrol 2022
+          </div>
+
         </div>
       </div>
 

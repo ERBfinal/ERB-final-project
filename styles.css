@@ -6,52 +6,246 @@ p {
   font-family: "helvetica", "Jost", "Arimo";
 }
 
-/* Navigation Bar */
-#header .navbar {
-  padding: 30px;
+span {
+  font-family: "helvetica", "Jost", "Arimo";
 }
 
-.navbar {
+/* header navbar */
+.logo {
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  /* margin-left: -75px; */
+  transform: translate(-50%, 100%);
+  z-index: 2;
+}
+
+/* -------------------------------------------------------- */
+/* Dropdown Menu inside a Navigation Bar */
+.topNavbar {
+  /* overflow: hidden; */
   background-color: #fff;
-  opacity: 95%
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 95%;
+  font-family: Futura;
+  font-size: 20px;
 }
 
-.sticky-top {
-  position: relative;
-}
-
-.nav-link {
+.topNavbar a {
+  float: left;
   color: #0658B1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.nav-link:hover {
+.topNavbar a:hover {
+  text-decoration: none;
+}
+
+.topDropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* service button */
+.topDropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: #0658B1;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.topNavbar a:hover, .topDropdown:hover .dropbtn {
   color: #FE7254;
 }
 
-.nav-item {
-  font-family: "Futura", "Nunito Sans", "Questrial";
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
+.topDropdown-content {
+  display: none;
+  position: absolute;
   background-color: #0658B1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-.dropdown-menu .dropdown-item {
+.topDropdown-content a {
+  float: none;
   color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
-.navbar-toggler {
-  margin-left: auto;
+.topDropdown-content a:hover {
+  color: #FE7254;
+  text-decoration: none;
 }
 
-.fa {
+.topDropdown:hover .topDropdown-content {
+  display: block;
+}
+
+/* login btn----------------------------- */
+.login-container {
+  float: right;
+  display: inline-block;
+  padding: 14px 0px;
+}
+
+.btnLogin {
+  /* -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px; */
+  font-family: Futura;
+  border: 1px solid #DCDCDC;
   color: #0658B1;
+  font-size: 14px;
+  padding: 6px 15px;
+  background: #fff;
+  text-decoration: none;
+}
+
+.btnLogin:hover {
+  background: #fff;
+  color: #FE7254;
+  text-decoration: none;
+}
+
+/* login btn----------------------------- */
+/* search bar-------------------------------- */
+.topNavbar .search-container {
+  -webkit-border-radius: 1;
+  -moz-border-radius: 1;
+  border-radius: 1px;
+  float: right;
+  margin-right: 10px;
+  padding: 14px 0px;
+}
+
+.topNavbar input[type=text] {
+  /* padding: 6px; */
+  font-size: 14px;
+  border: none;
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+  border-right: 1px solid #DCDCDC;
+  font-family: helvetica;
+  position: inherit;
+  float: right;
+  padding: 6px 0px;
+}
+
+.topNavbar .search-container button {
+  float: left;
+  font-size: 14px;
+  border: none;
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+  border-left: 1px solid #DCDCDC;
+  cursor: pointer;
+  padding: 6px 10px;
+  background-color: #fff;
+}
+
+.topNavbar .search-container button:hover {
+  background: #DCDCDC;
+}
+
+/* search bar-------------------------------- */
+/* -------------------------------------------------------- */
+/* Responsive topNavbar */
+.topNavbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .topNavbar a:not(.item--clear), .topDropdown .dropbtn, .search-container, .login-container {
+    display: none;
+  }
+
+  .topNavbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topNavbar.responsive {
+    position: relative;
+  }
+
+  .topNavbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topNavbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topNavbar.responsive .topDropdown {
+    float: none;
+  }
+
+  .topNavbar.responsive .topDropdown-content {
+    position: relative;
+  }
+
+  .topNavbar.responsive .topDropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* searchbar V1--------------------------- */
+  /* .topNavbar.responsive .search-container {
+    float: none;
+    display: block;
+    text-align: left;
+  } */
+  /* searchbar V2--------------------------- */
+  .topNavbar.responsive .search-container {
+    float: none;
+    display: block;
+  }
+
+  .topNavbar.responsive .search-container button {
+    float: none;
+    /* display: block; */
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .topNavbar.responsive input[type=text] {
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+
+  /* searchbar V2--------------------------- */
+  .topNavbar.responsive .login-container {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 /* booking section */
 #booking {
-  padding: 110px 50px 0px 50px;
+  padding: 130px 50px 0px 50px;
 }
 
 .title-image {
@@ -96,7 +290,26 @@ p {
 .footer-section {
   background-color: #a4b2bf;
   color: #fff;
-  padding: 50px 50px;
+  padding: 80px 50px;
+}
+
+.footer-heading {
+  padding-bottom: 10px;
+}
+
+.footer-text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-icon {
+  display: inline-block;
+  padding-top: 15px;
+}
+
+.footer-text2 {
+  display: inline-block;
+  margin-left: 50px;
 }
 
 /* button */
