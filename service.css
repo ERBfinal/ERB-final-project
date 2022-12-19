@@ -1,0 +1,272 @@
+/*sticky social icon*/
+body {margin:0;height:250px;}
+/*part one*/
+.icon-bar {
+  position: fixed;
+  top: 70%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+	z-index: 1;
+	/* left: 0.5%; */
+}
+
+.icon-bar a {
+  display:block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.whatsapp {
+  background: #59CE72;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/*part two*/
+/* external css for carousel*/
+img {
+  vertical-align: middle;
+  height: 70vh;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: auto 2px 20px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+div span~ .active {
+  background-color: #717171;
+}
+
+ /* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+ @keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+} 
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*part three*/
+/*tab menu*/
+  .row{
+    margin:auto;
+  }
+  .col-12 h2{
+    border: 2px dashed red ; 
+    font-weight: bold;
+    text-align: center;
+  }
+  .col-5 li{
+    list-style:none;
+    margin-top: 5px;
+    padding: 10px;
+    color:black;
+    text-align: center;
+  }
+  .col-5 li:hover{
+    /* background-color: rgb(234, 234, 183);
+    color: rgb(175, 129, 137); */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(186,2,222,1) 0%, rgba(99,101,238,0.8242647400757178) 49%, rgba(0,212,255,1) 92%);
+    opacity: 0.8;
+  }
+  .col-5{
+    display: flex;
+    flex-flow: column nowrap;
+		text-decoration: none;
+  }
+
+	.col-5 .tablinks{
+		text-decoration: none;
+	}
+
+  .col-7{
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .col-7 header{
+    border-bottom:5px solid burlywood;
+    width:fit-content;
+
+  }
+
+  .col-7 button,  .col-7 button a{
+    background:linear-gradient( to right, #FE7254 , #ffad06);
+    color: white;
+    margin-top: 15px;
+    text-decoration: none;
+  }
+  .col-7 button:hover{
+    background-color: rgb(85, 85, 171);
+    color: white;
+  }
+
+
+/*part four*/
+/*modal*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /*Stay in place*/
+  z-index: 1; /* Sit on top */
+  padding-top: 300px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*price css*/
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.col-10 .button {
+  background:linear-gradient( to right, #FE7254 , #ffad06);
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+.col-10{
+  margin: auto;
+}

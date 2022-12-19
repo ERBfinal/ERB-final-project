@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+    <script src="https://kit.fontawesome.com/c48ddcf42f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        } 
+
+    </style>
+  
+
+</head>
+
+<body>
+      
+    <main>
+      <!--sticky social icon-->
+      <div class="icon-bar">
+        <a href="https://en-gb.facebook.com" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a> 
+        <a href="https://www.whatsapp.com/" target="_blank" class="whatsapp"><i class="fa fa-whatsapp"></i></a> 
+        <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1930271173%3A1671115750617926&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fe-11-671fda5f4c58610ec905e7fe75cf3-3cb61e1421e892d23d04b032be5729a5b4df110b&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession&hl=en-US" target="_blank" class="google"><i class="fa fa-google"></i></a> 
+        <a href="https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a> 
+      </div>
+
+      <!-- carousel external -->
+      <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="./img/facility1.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="./img/facility2.jpg" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="./img/health.jpg" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+      
+      <!--tab menu-->
+      <div class="row">
+        <div class="col-12">
+          <h2 class="title">SERVICE</h2>
+        </div>
+        <div class="col-5">
+          <a href="#menu1" class="tablinks" onclick="openMenu(event, 'menu1')"id="defaultOpen"><li>Internal Medicine and Vaccinations</li></a>
+          <a href="#menu2" class="tablinks" onclick="openMenu(event, 'menu2')"><li>On-Site Diagnostics X-ray CT</li></a>
+          <a href="#menu3" class="tablinks" onclick="openMenu(event, 'menu3')"><li>Ultrasonography and Echocardiology</li></a>
+          <a href="#menu4" class="tablinks" onclick="openMenu(event, 'menu4')"><li>Orthopaedics and Soft Tissue Surgery</li></a>
+          <a href="#menu5" class="tablinks" onclick="openMenu(event, 'menu5')"><li>Dentistry and Oral surgery</li></a>
+          <a href="#menu6" class="tablinks" onclick="openMenu(event, 'menu6')"><li>Endoscopy & surgery</li></a>
+          <a href="#menu7" class="tablinks" onclick="openMenu(event, 'menu7')"><li>Acupuncture and Pain Management</li></a>
+          <a href="#menu8" class="tablinks" onclick="openMenu(event, 'menu8')"><li>Ophthalmology</li></a>
+        </div>
+
+        <div class="col-7"> 
+          <div class="tabcontent" id="menu1">
+            <h2 class="title">Internal Medicine and Vaccinations</h2>
+            <li>Regular Check-ups</li>
+            <li>Senior Care</li>
+            <li>Parasite Prevention & Control</li>
+            <li>Vaccination for Dogs</li>
+            <li>Vaccination for Cats</li>
+            <button class="btn" id="myBtn" onclick="document.getElementById('myModal').style.display='block'">Read More</button>
+          
+            <!--modal-->
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>    
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis inventore facere odit maiores! Rem iste delectus, fuga atque voluptate voluptas, officia, aspernatur deserunt ullam exercitationem distinctio! Praesentium molestias pariatur id.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabcontent" id="menu2">
+            <h2 class="title">On-Site Diagnostics X-ray CT</h2>
+            <li>On-Site Diagnostics Laboratories</li>
+            <li>Digital Radiology</li>
+            <li>CT scan</li>
+            <button class="btn" id="myBtn" onclick="document.getElementById('myModal2').style.display='block'">Read More</button>
+
+            <!--modal, id cannot the same, if same cannot work-->
+            <div id="myModal2" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close" onclick="document.getElementById('myModal2').style.display='none'">&times;</span>    
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis inventore facere odit maiores! Rem iste delectus, fuga atque voluptate voluptas, officia, aspernatur deserunt ullam exercitationem distinctio! Praesentium molestias pariatur id.</p>
+              </div>
+            </div>
+          </div>
+        
+
+          <div class="tabcontent" id="menu3">
+            <h2 class="title">Ultrasonography and Echocardiology</h2>
+            <li>Ultrasound</li>
+            <li>Echocardiology</li>
+            <button class="btn"><a href="#expanTab1">Read More</a></button>
+          </div>
+
+          <div class="tabcontent" id="menu4">
+            <h2 class="title">Orthopaedics and Soft Tissue Surgery</h2>
+            <li>Anesthesia and Monitoring</li>
+            <li>Orthopeadic surgery</li>
+            <li>Soft tissue surgery</li>
+            <li>Neurological surgery</li>
+            <button class="btn"><a href="#expanTab2">Read More</a></button>
+          </div>
+          <div class="tabcontent" id="menu5">
+            <h2 class="title">Dentistry and Oral surgery</h2>
+            <header>Pet Dental Care</header>
+            <p>Just as with people your pets will still require regular dental exams, and cleaning or extractions as necessary.  Our clinics offer a full range of dental services such as:</p>
+            <li>ultrasound scaling & polishing</li>
+            <li>advanced dental X-rays</li>
+            <li>dental filling</li>
+            <li>dental flap</li>
+            <li>- preventive teeth and gum care products</li>
+            <button class="btn" ondblclick=""><a href="#expanTab3">Read More</a></button>
+          </div>
+          <div class="tabcontent" id="menu6">
+            <h2 class="title">Endoscopy & surgery</h2>
+            <li>Endoscopy</li>
+            <li>Laparoscopic surgery</li>
+            <button class="btn">Read More</button>
+          </div>
+          <div class="tabcontent" id="menu7">
+            <h2 class="title">EAcupuncture and Pain Management</h2>
+            <header>Veterinary acupuncture</header>
+            <p>Veterinary acupuncture is a therapy of inserting very fine needles into specific points of he body to stimulate healing. Acupuncture has been practiced in Chinese medicine for thousands of years and in recent years, it has been used as an assistance therapy to western medicines in veterinary science. Clinical studies has shown significant positive results with acupuncture treatment for many kinds of muscle-skeletal disease, such as arthritis, muscle weakness, post trauma/surgery recovery, long term pain management. It also works for some neurological disease like intervertebral disk disease, paralysis etc.</p>
+            <button class="btn">Read More</button>
+          </div>
+          <div class="tabcontent" id="menu8">
+            <h2 class="title">Ophthalmology</h2>
+            <header>Ophthalmic Surgery</header>
+            <p>- Cataract Surgery with Intraocular Lens Replacement by small-incision phacoemulsification</p>
+            <li>Cryosurgery- eyelash disorders, lens luxations</li>
+            <li>Eyelid Surgery for correction of entropion, tumors, cherry eye</li>
+            <li>Corneal Surgery- foreign body removal, sequestrum removal, corneal transplants, conjuctival grafts.</li>
+            <button class="btn">Read More</button>
+          </div>
+        </div> <!--service-content div-->
+
+      </div>
+      <!--icon-->
+        <div style="border: 2px dashed red; padding: 50px;" class="col-10">
+          <p><b>Best diagnostic medicine </b> is dependent on a thorough examination and history. Our appointments <mark>average 30 minutes </mark>duration and we pride ourselves on our experience and diagnostic skills.</p>
+        </div>
+
+      <!--price table-->
+        <div id="section1" class="col-10">
+          <h2 style="text-align:center">MEMBER SCHEME</h2>
+          <p style="text-align:center">Protect the health of your pets and keep them happy!</p>
+
+          <div class="columns">
+            <ul class="price">
+              <li class="header" style="background-color:#8aeb55">Basic</li>
+              <li class="grey">$ 1000 / year</li>
+              <li>1 time x Regular Check-ups</li>
+              <li>1 time x Vaccination</li>
+              <li>1 time x Parasite Prevention & Control</li>
+              <li>1 time x preventive teeth and gum care products</li>
+              <li class="grey"><a href="#" class="button">Sign Up</a></li>
+            </ul>
+          </div>
+
+          <div class="columns">
+            <ul class="price">
+              <li class="header" style="background-color:#71b3ee">Pro</li>
+              <li class="grey">$ 2000 / year</li>
+              <li>3 time x Regular Check-ups</li>
+              <li>3 time x Vaccination</li>
+              <li>3 time x Parasite Prevention & Control</li>
+              <li>3 time x preventive teeth and gum care products</li>
+              <li class="grey"><a href="#" class="button">Sign Up</a></li>
+            </ul>
+          </div>
+
+          <div class="columns">
+            <ul class="price">
+              <li class="header" style="background-color:#ff6969">Premium</li>
+              <li class="grey">$ 3000 / year</li>
+              <li>5 time x Regular Check-ups</li>
+              <li>5 time x Vaccination</li>
+              <li>5 time x Parasite Prevention & Control</li>
+              <li>5 time x preventive teeth and gum care products</li>
+              <li class="grey"><a href="#" class="button">Sign Up</a></li>
+            </ul>
+          </div>
+      </div>  
+
+
+
+      
+
+      
+
+    </main>
+    <script>
+      function openMenu(evt, menuNo) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the link that opened the tab
+      document.getElementById(menuNo).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+
+      // external carousel comtrol
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 5 seconds
+      }
+
+      // modal 
+      
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      
+
+    
+
+    
+        
+
+    </script>
+</body>
+</html>
