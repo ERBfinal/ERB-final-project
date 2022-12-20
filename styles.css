@@ -4,6 +4,8 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-family: "helvetica", "Jost", "Arimo";
+  font-size: 14px;
+  font-weight: lighter;
 }
 
 span {
@@ -30,7 +32,7 @@ span {
   width: 100%;
   z-index: 1;
   opacity: 95%;
-  font-family: Futura;
+  font-family: "Futura", "Nunito Sans", "Questrial";
   font-size: 20px;
 }
 
@@ -104,7 +106,7 @@ span {
   /* -webkit-border-radius: 5;
   -moz-border-radius: 5;
   border-radius: 5px; */
-  font-family: Futura;
+  font-family: "Futura", "Nunito Sans", "Questrial";
   border: 1px solid #DCDCDC;
   color: #0658B1;
   font-size: 14px;
@@ -166,7 +168,7 @@ span {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .topNavbar a:not(.item--clear), .topDropdown .dropbtn, .search-container, .login-container {
     display: none;
   }
@@ -177,7 +179,7 @@ span {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .topNavbar.responsive {
     position: relative;
   }
@@ -244,7 +246,7 @@ span {
 
 /* booking section */
 #booking {
-  padding: 130px 50px 0px 50px;
+  padding: 130px 50px 100px 50px;
 }
 
 .title-image {
@@ -261,9 +263,27 @@ span {
   color: #fff;
 }
 
+.col-lg-6 .btn:hover {
+  background-color: #0658B1;
+  border-color: #0658B1;
+  color: #FE7254;
+  text-decoration: none;
+}
+
+.booking-button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.booking-button a:hover {
+  color: #fff;
+  border-color: #0658B1;
+  text-decoration: none;
+}
+
 /* different section */
 #different {
-  padding: 50px 50px;
+  padding: 100px 50px;
 }
 
 .different-column {
@@ -272,17 +292,25 @@ span {
 
 /* do section */
 #do {
-  padding: 50px 50px;
+  padding: 100px 50px;
 }
 
 /* mission section */
 #mission {
-  padding: 50px 50px;
+  padding: 100px 50px;
 }
 
 /* location section */
 #location {
+  padding: 130px 50px 50px 50px;
+}
+
+#location .row {
   padding: 50px 50px;
+}
+
+form p {
+  margin-bottom: 1px;
 }
 
 /* footer */
