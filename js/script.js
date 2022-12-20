@@ -46,3 +46,12 @@ function added(){
   alert("Added to cart! Thank you.")
 }
 
+
+function myTopNavbarF() {
+  var x = document.getElementById("myTopNavbar");
+  if (x.className === "topNavbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "topNavbar";
+  }
+}
