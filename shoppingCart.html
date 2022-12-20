@@ -4,98 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+   
     <!--Font Awesome 5 Icons  -->
     <script src='https://kit.fontawesome.com/ac9b1cd01a.js' crossorigin='anonymous'></script>
+    
     <title>Shopping cart</title>
 
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
         body{
+            background-color:#f4e1dc;
+            min-height: 100vh;
+            vertical-align: middle;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
         }
 
-        .navbar{
-            display:flex;
-            flex-direction: row;
-            justify-content: space-between ;
-            background-color:#FE7254 ;
-            color: white;
-            padding: 25px 60px;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        .cart{
+        .cargo{
+            position:relative;
             background-color:white ;
             color: black;
-            font-size: 30px;
+            font-size: 23px;
             padding: 5px;
             border-radius: 4px;
+            text-align: right;
         }
 
-        .cartAmount{
+        .cargoAmount{
             position: absolute;
-            top: 55px;
-            right: 50px;
-            font-size: 16px;
-            background-color: #0658B1;
+            top: 25px;
+            right: 25px;
+            font-size: 12px;
+            background-color: #3c74af;
             color: white;
             padding: 3px;
             border-radius: 3px;
         }
 
-           #shop{
-            display: grid;
-            gap: 30px;
-            justify-content: center;
-
+        .card {
+            margin: auto;
+            max-width: 950px;
+            width: 90%;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 1rem;
+            border: transparent;
         }
 
-           .row{
-            display: flex;
-            border: 2px solid #0658B1; 
-            border-radius: 4px; 
-            width:100%;
-            justify-content: center;
-            align-items: center;
+        @media(max-width:767px){
+            .card{
+                margin: 3vh auto;
+            }
         }
 
-
-           .buttons{ 
-            flex-direction: row;
-            gap: 8px;
-            font-size: 20px;
+        .cart{
+            padding: 4vh;
+            border-bottom-left-radius: unset;
+            border-top-right-radius: 1rem;
         }
 
-           .quantity{
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-           }
+        @media(max-width:767px){
+            .cart{
+                  padding: 4vh;
+                  border-bottom-left-radius: unset;
+                  border-top-right-radius: 1rem;
+                }
+        } 
 
-        /*.details{ 
-            display: flex;
-            flex-direction: row;
-            padding: 10px;
-            gap: 10px;
-        }
-        
-       *  .price-quantity{
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
+        .summary{
+            background-color: #ddd;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            padding: 4vh;
+            color: rgb(65,65,65)
         }
 
-        /* .buttons{ 
-            flex-direction: column;
-            gap: 8px;
-            font-size: 20px;
+        @media(max-width:767px){
+              .summary{
+               border-top-right-radius: unset;
+               border-bottom-left-radius: 1rem;
+               }
         }
-        */
+
+        .summary .col-2{
+            padding: 0;
+        }
+        .summary .col-1{
+            padding: 0;
+        }
+        .row{
+            margin: 0;
+        }
+
+        .main{
+            margin: 0;
+            padding: 2vh 0;
+            width: 100%;
+        }
+
+        .col-2, .col{
+             padding: 0 1vh;
+        }
+        a{
+          padding: 0 1vh;
+        }
+
+        h5{
+           margin-top: 1vh;
+        }
+
+        hr{
+           margin-top: 1.25rem;
+        }
 
         .fa-minus{
             color: red;
@@ -105,87 +128,232 @@
             color: green;
         }
 
+        select{
+            border: 1px solid rgba(0, 0, 0, 0.137);
+            padding: 1.5vh 1vh;
+            margin-bottom: 4vh;
+            outline: none;
+            width: 100%;
+            background-color: rgb(247, 247, 247);
+        }
+
+        input{
+            border: 1px solid rgba(0, 0, 0, 0.137);
+            padding: 1vh;
+            margin-bottom: 4vh;
+            outline: none;
+            width: 100%;
+            background-color: rgb(247, 247, 247);
+        }
+
+        .btn{
+           background-color: #FE7254;
+           color:#0658B1;
+           width: 100%;
+           font-size: 1rem;
+           margin-top: 4vh;
+           padding: 1vh;
+           border-radius: 0;
+        }
+
+        .close{
+           margin-left: auto;
+           font-size: 0.7rem;
+}
+
+
+        .input-field{
+            width: 60px;
+            padding: 5px 10px;
+            text-align: center;
+        }
+
+        .box .button{
+            width: 37px;
+            height: 37px;
+            border: 1px solid; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size:medium;
+            cursor: pointer;
+        }
+
     </style>
+
 </head>
 
 <body>
-    <div class="navbar">
-        <h2>Shopping Cart</h2>
-        <div class="cart">
-         <a href="payment.html" ><i class="fa-solid fa-cart-shopping"></i></a>
-         <div class="cartAmount">0</div>
-        </div>
-    </div>
-    <br>
 
-    <section class="h-100">
-        <div>
-            <p class="mb-0"  style="text-align: right"><span class="text-muted">Sort by:</span> <a href="#!" class="text-body">price <i
-                  class="fas fa-angle-down mt-1"></i></a></p>
-        </div>
+    <header>
+        <nav class="navbar navbar-light justify-content-between" style="background-color:#FE7254 ;">
+            <a class="navbar-brand">Shopping Cart</a>
 
-        <br>
-        <br>
+            <div class="cargo my-2 my-sm-0">
+             <i class="fa-solid fa-cart-shopping"></i>
+             <input class="cargoAmount" style="text-align: center" id="total" type="text" disabled="" value="0">
+            </div>
 
-        <div class="container" id="shop">
-            <div class="row">
-                <div class="col">
-                    <img width="200" height="200" src="/Img/Product img/Dog/Product06.PNG" alt="GIGWI Plush Friendz">
-                </div>
-                
-                <div class="col">
-                    <h4><a href="#" class="text-primary mb-2">GIGWI Plush Friendz 拉扯系列 - 拉扯大象</a></h4>
-                    <p><a href="#" class="text-muted">Dog toy</a></p>
-                </div>
-                
-                <div class="col">
-                    <div class="quantity">
-                     
-                     <div class="buttons">
-                        <i class="fa-solid fa-minus"></i>
-                        <div class="qty">0</div>
-                        <i class="fa-solid fa-plus"></i>
+        </nav>
+
+        
+        <div class="top-header-wrapper">
+            <div class="top header">
+                <p class="heaser-txt middle-hdr text-center">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    Free shipping on orders over HKD500. Happy shopping.
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </p>
+            </div>
+        
+    </header>
+
+        <div class="card">
+            <div class="row"> 
+                <div class="col cart">
+                    <div class="title" style="margin-bottom:5vh;">
+                        <div class="row">
+                            <div class="col"><h5><b></b></h5></div>
                         </div>
-                     </div>
-                </div>
-
-                <div class="col">
-                <h4>HKD 69.00</h4>
-                </div>
-            
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <img width="200" height="200" src="/Img/Product img/Dog/Product02.PNG" alt="STELLA & CHEWY'S">
-                </div>
-                
-                <div class="col">
-                    <h4><a href="#" class="text-primary mb-2">STELLA & CHEWY'S 凍乾生內臟小食系列 - 雞胸 2.75oz</a></h4>
-                    <p><a href="#" class="text-muted">Dog food</a></p>
-                </div>
-                
-                <div class="col">
-                    <div class="price-quantity">
-                     
-                     <div class="buttons">
-                        <i class="fa-solid fa-minus"></i>
-                        <div class="quantuty">0</div>
-                        <i class="fa-solid fa-plus"></i>
-                     </div>
-
-                     <h4>HKD 99.00</h4>
-
                     </div>
+
+
+                    <div class="row border top border-bottom">
+                    <div class="row main align-items-center">
+                        <div class="col-2"><img width="200" class="img-fluid rounded-3" src="/Img/Product img/Dog/Product06.PNG" alt="GIGWI Plush Friendz"></div>
+                        <div class="col">
+                            <div class="row text-muted">Dog toy</div>
+                            <div class="row">GIGWI Plush Friendz 拉扯系列 - 拉扯大象</div>
+                        </div>
+                        <div class="box">
+                        <div class="col d-flex">
+                          <div class="dec button">-</div> &nbsp;
+                          <input type="text" name="qty" id="1" value="0" class="input-field" >&nbsp; 
+                          <div class="inc button">+</div>
+                        </div>
+                        </div>
+                        <div class="col">
+                            <div>HKD 69.00</div>
+                            <span><a href="#!" class="text-danger" style="margin-left: auto; font-size: 0.7rem"><i class="fas fa-trash fa-lg"></i></a></span>
+                        </div>
+                    </div>
+                    </div>  
+                    
+
+                    <div class="row border border-bottom">
+                      <div class="row main align-items-center">
+                        <div class="col-2"><img width="200" class="img-fluid rounded-3" src="Img/Product img/Cat/Product18.PNG" alt="VETRESKA2"></div>
+                        <div class="col">
+                           <div class="row text-muted">Cat toy</div>
+                           <div class="row">VETRESKA 水果貓爬架</div>
+                        </div>
+                        <div class="box">
+                        <div class="col d-flex">
+                            <div class="dec button">-</div> &nbsp;
+                            <input type="text" name="qty" id="1" value="0" class="input-field">&nbsp; 
+                            <div class="inc button">+</div>
+                        </div>
+                        </div>
+                         <div class="col">
+                            <div>HKD 699.00</div>
+                            <span><a href="#!" class="text-danger" style="margin-left: auto; font-size: 0.7rem"><i class="fas fa-trash fa-lg"></i></a></span>
+                        </div>
+                      </div>
+                    </div>
+
+                  <div class="back-to-shop" style="margin-top: 2rem;"><a href="#">&leftarrow;</a><span class="text-muted">Back to shop</span></div>
                 </div>
+
+            <div class="col-md-4 summary">
+                <div><h5><b>Summary</b></h5></div>
+                <hr>
+                <div class="row">
+                    <p class="col" style="padding-left:0;"><input style="text-align: center;width: 35px" id="total2" type="text" disabled="" value="0"><span>items:</span></p>
+                    <div class="col text-right">HKD768.00</div>
+                </div>
+                <form>
+                    <p class="col" style="padding-left:0;">Shipping:</p>
+                    <select><option class="text-muted">Free delivery</option></select>
+                    <p>Discount Code</p>
+                    <input id="code" placeholder="Enter your code">
+                </form>
+                <div class="row" style="border-top: 1px dotted #0658B1; padding:2vh 0;">
+                    <div class="col">Total price</div>
+                    <div class="col text-right">HKD768.00</div>
+                </div>
+                <button class="btn">Checkout</button>
             </div>
-
-
-
-          
-
+            </div>
         </div>
-    </section>
+
+    <script>
+        let incrementButton = document.getElementsByClassName('inc');
+        let decrementButton = document.getElementsByClassName('dec');
+        // console.log(incrementButton);
+        // console.log(decrementButton);
+
+        // increment
+        for(let i = 0; i < incrementButton.length; i++){
+            let button = incrementButton[i];
+            button.addEventListener('click', function(event){
+
+                let buttonClicked = event.target;
+                // console.log(buttonClicked);
+                let input = buttonClicked.parentElement.children[1];
+                // console.log(input)
+                let inputValue = input.value;
+                // console.log(inputValue)
+                let newValue = parseInt(inputValue) + 1;
+                // console.log(newValue);
+                input.value = newValue;
+
+                getTotal();
+
+        })
+    }
+
+    // decrement
+    for(let i = 0; i < decrementButton.length; i++){
+            let button = decrementButton[i];
+            button.addEventListener('click', function(event){
+
+                let buttonClicked = event.target;
+                // console.log(buttonClicked);
+                let input = buttonClicked.parentElement.children[1];
+                // console.log(input)
+                let inputValue = input.value;
+                // console.log(inputValue)
+                let newValue = parseInt(inputValue) -1;
+                // console.log(newValue);
+                if (newValue >=0) {
+                    input.value = newValue;
+                }
+                else{
+                    input.value = 0;
+                }
+                getTotal();
+        })
+    }
+
+    // Get total number
+    function getTotal() {
+        let arr = document.querySelectorAll('.input-field');
+        let total = 0;
+        for(let i = 0; i < arr.length; i++) {
+            if(parseInt(arr[i].value)) {
+                total += parseInt(arr[i].value);
+            }
+        }
+
+        document.getElementById('total').value = total;
+        document.getElementById('total2').value = total;
+    }
+
+
+    </script>
+     
  
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 </html>
