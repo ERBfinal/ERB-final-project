@@ -15,8 +15,19 @@
 
     <style>
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Futura", "Nunito Sans", "Questrial";
+}
+
+p {
+  font-family: "helvetica", "Jost", "Arimo";
+}
+
+span {
+  font-family: "helvetica", "Jost", "Arimo";
+}
+
         body{
-            background-color:#f4e1dc;
             min-height: 100vh;
             vertical-align: middle;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -32,11 +43,13 @@
             padding: 5px;
             border-radius: 4px;
             text-align: right;
+            top: .5px;
+            margin-top: 0;
         }
 
         .cargoAmount{
             position: absolute;
-            top: 25px;
+            top: 20px;
             right: 25px;
             font-size: 12px;
             background-color: #3c74af;
@@ -148,12 +161,17 @@
 
         .btn{
            background-color: #FE7254;
-           color:#0658B1;
+           color:white;
            width: 100%;
            font-size: 1rem;
            margin-top: 4vh;
            padding: 1vh;
            border-radius: 0;
+           text-decoration: none;
+        }
+
+        a{
+            color: white;
         }
 
         .close{
@@ -177,6 +195,11 @@
             justify-content: center;
             font-size:medium;
             cursor: pointer;
+            text-decoration: none;
+        }
+
+        .box .button:hover{
+            text-decoration: none;
         }
 
     </style>
@@ -186,16 +209,25 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-light justify-content-between" style="background-color:#FE7254 ;">
-            <a class="navbar-brand">Shopping Cart</a>
+        <nav class="navbar navbar-light justify-content-between">
+            <div class="col">
+            <a class="navbar-brand" style="color:#0658B1">Shopping Cart</a>
+            </div>
+
+            <div class="col-7">
+            <p style="margin-top: 10px;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="index.html"><img src="img/logo/logo001.png" width="150" alt="Pet patrol"></a></p>
+            </div>
+
 
             <div class="cargo my-2 my-sm-0">
              <i class="fa-solid fa-cart-shopping"></i>
-             <input class="cargoAmount" style="text-align: center" id="total" type="text" disabled="" value="0">
+             <input class="cargoAmount" style="text-align: center" id="total" type="text" disabled="" value="2">
             </div>
 
         </nav>
 
+        <br>
+        <br>
         
         <div class="top-header-wrapper">
             <div class="top header">
@@ -228,7 +260,7 @@
                         <div class="box">
                         <div class="col d-flex">
                           <div class="dec button">-</div> &nbsp;
-                          <input type="text" name="qty" id="1" value="0" class="input-field" >&nbsp; 
+                          <input type="text" name="qty" id="1" value="1" class="input-field" >&nbsp; 
                           <div class="inc button">+</div>
                         </div>
                         </div>
@@ -250,7 +282,7 @@
                         <div class="box">
                         <div class="col d-flex">
                             <div class="dec button">-</div> &nbsp;
-                            <input type="text" name="qty" id="1" value="0" class="input-field">&nbsp; 
+                            <input type="text" name="qty" id="1" value="1" class="input-field">&nbsp; 
                             <div class="inc button">+</div>
                         </div>
                         </div>
@@ -261,14 +293,14 @@
                       </div>
                     </div>
 
-                  <div class="back-to-shop" style="margin-top: 2rem;"><a href="#">&leftarrow;</a><span class="text-muted">Back to shop</span></div>
+                  <div class="back-to-shop" style="margin-top: 2rem;"><a href="productList.html" style="color:black">&leftarrow;</a><span class="text-muted">Back to shop</span></div>
                 </div>
 
             <div class="col-md-4 summary">
                 <div><h5><b>Summary</b></h5></div>
                 <hr>
                 <div class="row">
-                    <p class="col" style="padding-left:0;"><input style="text-align: center;width: 35px" id="total2" type="text" disabled="" value="0"><span>items:</span></p>
+                    <p class="col" style="padding-left:0;"><input style="text-align: center;width: 35px" id="total2" type="text" disabled="" value="2"><span>items:</span></p>
                     <div class="col text-right">HKD768.00</div>
                 </div>
                 <form>
@@ -281,7 +313,7 @@
                     <div class="col">Total price</div>
                     <div class="col text-right">HKD768.00</div>
                 </div>
-                <button class="btn">Checkout</button>
+                <button class="btn" style="text-decoration: none;"><a href="payment.html">Checkout</a></button>
             </div>
             </div>
         </div>
