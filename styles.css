@@ -245,7 +245,7 @@ span {
 }
 
 /* booking section */
-#booking {
+#booking, #sorry {
   padding: 130px 50px 100px 50px;
 }
 
@@ -314,6 +314,15 @@ form p {
 }
 
 /* footer */
+#footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#footer a:hover {
+  color: #FE7254;
+}
+
 .footer-section {
   background-color: #a4b2bf;
   color: #fff;
