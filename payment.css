@@ -1,16 +1,15 @@
-/*navbar ----------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
   font-family: "Futura", "Nunito Sans", "Questrial";
 }
 
 p {
   font-family: "helvetica", "Jost", "Arimo";
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: lighter;
 }
 
 span {
   font-family: "helvetica", "Jost", "Arimo";
-  font-size: 12px;
 }
 
 /* header navbar */
@@ -169,7 +168,7 @@ span {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .topNavbar a:not(.item--clear), .topDropdown .dropbtn, .search-container, .login-container {
     display: none;
   }
@@ -180,7 +179,7 @@ span {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .topNavbar.responsive {
     position: relative;
   }
@@ -366,15 +365,25 @@ label {
   cursor: pointer;
 }
 
-.modal-content-btn{
+.modal-content-btn {
   display: inline-flex;
-  width: fit-content;
+  width:max-content;
   background-color: #FE7254;
   color: #fff;
   border: none;
   border-radius: 3px;
   font-size: large;
+  margin: 10px;
+  justify-content: flex-start;
 }
+.modal-content-btn:hover{
+  background-color: #0658B1;
+}
+.modal-content div a{
+  text-decoration: none;
+  color: #fff;
+}
+
 
 /* form valiidation-------------------- */
 
@@ -397,7 +406,16 @@ input{
 }
 
   
-  /* footer --------------------------- */
+ /* footer */
+#footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#footer a:hover {
+  color: #FE7254;
+}
+
 .footer-section {
   background-color: #a4b2bf;
   color: #fff;
@@ -423,7 +441,10 @@ input{
   margin-left: 50px;
 }
 
-/* button --------------------------- */
+
+/* maintenance */
+
+/* button */
 #btn-back-to-top {
   position: fixed;
   bottom: 20px;
@@ -432,7 +453,3 @@ input{
   color: #fff;
   background-color: #FE7254;
 }
-
-
-
-
