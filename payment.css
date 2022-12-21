@@ -1,133 +1,438 @@
-.row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    margin: 0 -16px;
-  }
-  
-  .col-25 {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-  }
-  
-  .col-50 {
-    -ms-flex: 50%; /* IE10 */
-    flex: 50%;
-  }
-  
-  .col-75 {
-    -ms-flex: 75%; /* IE10 */
-    flex: 75%;
-  }
-  
-  .col-25,
-  .col-50,
-  .col-75 {
-    padding: 0 16px;
-  }
-  
-  .container {
-    background-color: #f2f2f2;
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-  }
-  
-  input[type=text] {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  
-  label {
-    margin-bottom: 10px;
-    display: block;
-  }
-  
-  .icon-container {
-    margin-bottom: 20px;
-    padding: 7px 0;
-    font-size: 24px;
-  }
-  
-  .btn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    width: 100%;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 17px;
-  }
-  
-  .btn:hover {
-    background-color: #45a049;
-  }
-  
-  a {
-    color: #2196F3;
-  }
-  
-  hr {
-    border: 1px solid lightgrey;
-  }
-  
-  span.price {
-    float: right;
-    color: grey;
-  }
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
-  @media (max-width: 800px) {
-    .row {
-      flex-direction: column-reverse;
-    }
-    .col-25 {
-      margin-bottom: 20px;
-    }
+/*navbar ----------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Futura", "Nunito Sans", "Questrial";
+}
+
+p {
+  font-family: "helvetica", "Jost", "Arimo";
+  font-size: 12px;
+}
+
+span {
+  font-family: "helvetica", "Jost", "Arimo";
+  font-size: 12px;
+}
+
+/* header navbar */
+.logo {
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  z-index: 2;
+}
+
+/* -------------------------------------------------------- */
+/* Dropdown Menu inside a Navigation Bar */
+.topNavbar {
+  /* overflow: hidden; */
+  background-color: #fff;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 95%;
+  font-family: "Futura", "Nunito Sans", "Questrial";
+  font-size: 20px;
+}
+
+.topNavbar a {
+  float: left;
+  color: #0658B1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topNavbar a:hover {
+  text-decoration: none;
+}
+
+.topDropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* service button */
+.topDropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: #0658B1;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.topNavbar a:hover, .topDropdown:hover .dropbtn {
+  color: #FE7254;
+}
+
+.topDropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0658B1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.topDropdown-content a {
+  float: none;
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topDropdown-content a:hover {
+  color: #FE7254;
+  text-decoration: none;
+}
+
+.topDropdown:hover .topDropdown-content {
+  display: block;
+}
+
+/* login btn----------------------------- */
+.login-container {
+  float: right;
+  display: inline-block;
+  padding: 14px 0px;
+}
+
+.btnLogin {
+  /* -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px; */
+  font-family: "Futura", "Nunito Sans", "Questrial";
+  border: 1px solid #DCDCDC;
+  color: #0658B1;
+  font-size: 14px;
+  padding: 6px 15px;
+  background: #fff;
+  text-decoration: none;
+}
+
+.btnLogin:hover {
+  background: #fff;
+  color: #FE7254;
+  text-decoration: none;
+}
+
+/* login btn----------------------------- */
+/* search bar-------------------------------- */
+.topNavbar .search-container {
+  -webkit-border-radius: 1;
+  -moz-border-radius: 1;
+  border-radius: 1px;
+  float: right;
+  margin-right: 10px;
+  padding: 14px 0px;
+}
+
+.topNavbar input[type=text] {
+  /* padding: 6px; */
+  font-size: 14px;
+  border: none;
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+  border-right: 1px solid #DCDCDC;
+  font-family: helvetica;
+  position: inherit;
+  float: right;
+  padding: 6px 0px;
+}
+
+.topNavbar .search-container button {
+  float: left;
+  font-size: 14px;
+  border: none;
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+  border-left: 1px solid #DCDCDC;
+  cursor: pointer;
+  padding: 6px 10px;
+  background-color: #fff;
+}
+
+.topNavbar .search-container button:hover {
+  background: #DCDCDC;
+}
+
+/* search bar-------------------------------- */
+/* -------------------------------------------------------- */
+/* Responsive topNavbar */
+.topNavbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .topNavbar a:not(.item--clear), .topDropdown .dropbtn, .search-container, .login-container {
+    display: none;
   }
 
-  /*modal css*/
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /*Stay in place*/
-    z-index: 1; /* Sit on top */
-    padding-top: 300px; /* Location of the box */
-    left: 0;
+  .topNavbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topNavbar.responsive {
+    position: relative;
+  }
+
+  .topNavbar.responsive .icon {
+    position: absolute;
+    right: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
+
+  .topNavbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topNavbar.responsive .topDropdown {
+    float: none;
+  }
+
+  .topNavbar.responsive .topDropdown-content {
+    position: relative;
+  }
+
+  .topNavbar.responsive .topDropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* searchbar V1--------------------------- */
+  /* .topNavbar.responsive .search-container {
+    float: none;
+    display: block;
+    text-align: left;
+  } */
+  /* searchbar V2--------------------------- */
+  .topNavbar.responsive .search-container {
+    float: none;
+    display: block;
+  }
+
+  .topNavbar.responsive .search-container button {
+    float: none;
+    /* display: block; */
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .topNavbar.responsive input[type=text] {
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+
+  /* searchbar V2--------------------------- */
+  .topNavbar.responsive .login-container {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* checkout section-------------------*/
+.checkout-section{
+  padding: 130px 50px 0px 50px;
+  margin-bottom: 20px;;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; 
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; 
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.col-50 input[type=text], 
+.col-25 input[type=text] { 
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.checkoutbtn {
+  background-color:  #FE7254;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.checkoutbtn:hover {
+  opacity: 0.8;
+  background-color:  #0658B1;
+}
+
+/*modal -----------------------------*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /*Stay in place*/
+  z-index: 1; /* Sit on top */
+  padding-top: 300px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+  display: block;
+  text-align: center;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  text-align: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content-btn{
+  display: inline-flex;
+  width: fit-content;
+  background-color: #FE7254;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: large;
+}
+
+/* form valiidation-------------------- */
+
+input{
+  position: relative;
+} 
+.input-group span{
+  position: absolute;
+  bottom: 35px;
+  right: 15px;
+  font-size: 14px;
+  color:#FE7254;
+}
+#submit-error{
+  color:#FE7254;
+  font-size: large;
+}
+.input-group span i{
+  color:seagreen;
+}
+
   
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 70%;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    text-align: right;
-    font-size: 28px;
-    font-weight: bold;
-    z-index: 1;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+  /* footer --------------------------- */
+.footer-section {
+  background-color: #a4b2bf;
+  color: #fff;
+  padding: 80px 50px;
+}
+
+.footer-heading {
+  padding-bottom: 10px;
+}
+
+.footer-text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-icon {
+  display: inline-block;
+  padding-top: 15px;
+}
+
+.footer-text2 {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+/* button --------------------------- */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  color: #fff;
+  background-color: #FE7254;
+}
+
+
+
+
