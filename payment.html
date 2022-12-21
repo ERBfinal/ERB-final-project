@@ -4,124 +4,455 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment&Delivery</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <title>Pet Patrol</title>
 
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="payment.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Jost&family=Nunito+Sans&family=Questrial&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="img/logo/favicon.ico">
+    <!-- bootstrap script 4-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/c48ddcf42f.js" crossorigin="anonymous"></script>
 
-    <!--external css-->
-    <link rel="stylesheet" href="payment.css">
-  
-
-
-    <style>
-
-    </style>
 
 </head>
 <body>  
+    <!-- navbar -->
+  <section id="header">
 
-    <!--checkour form external-->
+    <div class="logo"><img src="img/logo/logo001.png" width="150" alt=""></div>
 
-    <h2>Responsive Checkout Form</h2>
-<p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other.</p>
-<div class="row">
-  <div class="col-75">
-    <div class="container">
-      <!-- <form action="/action_page.php"> -->
-        <form>
-      
-        <div class="row">
-          <div class="col-50">
-            <h3>Billing Address</h3>
-            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-            <label for="email"><i class="fa fa-envelope"></i> Email</label>
-            <input type="text" id="email" name="email" placeholder="john@example.com">
-            <label for="adr"><i class="fa fa-address-card-o"></i> Address 1</label>
-            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-            <label for="city"><i class="fa fa-institution"></i>Address 2</label>
-            <input type="text" id="city" name="city" placeholder="New York">
-
-            <div class="row">
-              <div class="col-50">
-                <label for="state">State</label>
-                <input type="text" id="state" name="state" placeholder="NY">
-              </div>
-              <div class="col-50">
-                <label for="zip">Zip</label>
-                <input type="text" id="zip" name="zip" placeholder="10001">
-              </div>
-            </div>
-          </div>
-
-          <div class="col-50">
-            <h3>Payment</h3>
-            <label for="fname">Accepted Cards</label>
-            <div class="icon-container">
-              <i class="fa fa-cc-visa" style="color:navy;"></i>
-              <i class="fa fa-cc-amex" style="color:blue;"></i>
-              <i class="fa fa-cc-mastercard" style="color:red;"></i>
-              <i class="fa fa-cc-discover" style="color:orange;"></i>
-            </div>
-            <label for="cname">Name on Card</label>
-            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-            <label for="ccnum">Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-            <label for="expmonth">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="September">
-            <div class="row">
-              <div class="col-50">
-                <label for="expyear">Exp Year</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2018">
-              </div>
-              <div class="col-50">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352">
-              </div>
-            </div>
-          </div>
-          
+    <div class="topNavbar" id="myTopNavbar">
+      <a href="#bookNow">Book Now</a>
+      <div class="topDropdown">
+        <button class="dropbtn">Service
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="topDropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
         </div>
-        <label>
-          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-        </label>
-        <input type="submit" value="Continue to checkout" class="btn" onclick="document.getElementById('myModal').style.display='block'">
-            <!--modal-->
-            <div id="myModal" class="modal">
+      </div>
+      <a href="#product">Product</a>
+      <a href="#shop">Shop</a>
+      <a href="#aboutUs">About Us</a>
+      <a href="javascript:void(0);" class="icon" onclick="myTopNavbarF()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <div class="login-container">
+        <form action="/login.html">
+          <button type="submit" class="btnLogin">Login</button>
+        </form>
+      </div>
+
+
+      <!-- Responsive Search Bar -->
+      <div class="search-container">
+        <form action="https://www.google.com">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+    <!--checkout form------------->
+  <section class="checkout-section">
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <form >
+            <div class="row">
+                
+              <div class="col-50">
+                <h3>Billing Address</h3>
+
+                <div class="input-group">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" onkeyup="ValidateName()" name="firstname" placeholder="John Ma" maxlength="30" required>
+                <span id="fn-error"></span>
+                </div>
+                
+                <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" onkeyup="ValidateEmail()" name="email" placeholder="john@example.com" required>
+                <span id="email-error"></span>
+                </div>
+                
+                <div class="input-group">
+                <label for="text"> Phone Number</label>
+                <input type="text" id="phone" onkeyup="ValidatePhone()" name="phone" placeholder="12345678" required>
+                <span id="phone-error"></span>
+                </div>
+
+                <div class="input-group">
+                  <label for="adr">Address</label>
+                  <input type="text" id="adr" onkeyup="ValidateAdr()" name="address" placeholder="UG202, UG301, ChinaChem Golden Plaza,..." required>
+                  <span id="address-error"></span>
+                </div>
+
+                <div class="input-group">
+                <label for="info">Additional Information</label>
+                <textarea name="info" id="info" cols="65" rows="5"   placeholder="Please enter your addition information"></textarea>
+                </div>
+              </div>
+
+              <div class="col-50">
+                <h3>Payment</h3>
+                <label for="fname">Accepted Cards</label>
+
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color:navy;"></i>
+                  <i class="fa fa-cc-amex" style="color:blue;"></i>
+                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                  <i class="fa fa-cc-discover" style="color:orange;"></i>
+                </div>
+
+                <div class="input-group">
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" onkeyup="ValidateCName()" name="cardname" placeholder="John Ma"  maxlength="30" required>
+                <span id="cname-error"></span>
+                </div>
+
+                <div class="input-group">
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" onkeyup="ValidateCCNum()" name="cardnumber" placeholder="1111-2222-3333-4444"  required>
+                <span id="ccnum-error"></span>
+                </div>
+
+                <div class="input-group">
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" onkeyup="ValidateExpMonth()" name="expmonth" placeholder="10"  required>
+                <span id="expmonth-error"></span>
+                </div>
+
+                <div class="row">
+                  <div class="col-50">
+                    <div class="input-group">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" onkeyup="ValidateExpYear()" name="expyear" placeholder="2022"  required>
+                    <span id="expyear-error"></span>
+                    </div>
+                  </div>
+
+                  <div class="col-50">
+                    <div class="input-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" onkeyup="ValidateCVV()" name="cvv" placeholder="352" required>
+                    <span id="cvv-error"></span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>  
+              
+            </div> 
+
+              </label>
+              <input type="submit" onclick="return ValidateForm()" value="Submit" class="checkoutbtn" required>
+              <span id="submit-error"></span>
+
+              <!--modal-->
+              <div id="myModal" class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
                   <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>    
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis inventore facere odit maiores! Rem iste delectus, fuga atque voluptate voluptas, officia, aspernatur deserunt ullam exercitationem distinctio! Praesentium molestias pariatur id.</p>
+                  <h1>The payment has completed...</h1>
+                  <button class="modal-content-btn">Back to shop</button>
+                  <button class="modal-content-btn">Back to home page</button>
                 </div>
               </div>
-            </div>
-      </form>
+          
+            </form>
+        </div>
+      </div> 
+
     </div>
-  </div>
-  <div class="col-25">
-    <div class="container">
-      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-      <hr>
-      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+  </section>
+
+  <!-- back-to-top button -->
+  <section id="back-to-top">
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="footer-section" id="footer">
+
+    <div class="row">
+
+      <div class="col-lg-6 text-right align-self-center">
+        <img src="img/logo/logo002.png" width="200" alt="">
+      </div>
+
+      <div class="col-lg-6">
+
+        <div class="footer-heading">
+          <h5>CONTACT US</h5>
+        </div>
+
+        <div class="footer-text">
+          <span>About Us</span><br>
+          <span>Contact Form</span><br>
+          <span>WhatsApp Us</span><br>
+        </div>
+
+        <div>
+          <div class="footer-icon align-bottom">
+            <i class="footericon fa-brands fa-twitter fa-xl pr-3"></i>
+            <i class="footericon fa-brands fa-facebook fa-xl pr-3"></i>
+            <i class="footericon fa-brands fa-instagram fa-xl pr-3"></i>
+          </div>
+
+          <div class="footer-text2">© Pet Patrol 2022
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+  </footer>
 
-    <script>
-        // const ab = document.querySelector("#show");
+   
+  <!--jsscript-->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  
+  <script> 
+  // Responsive Topnav
 
-        // function showDiv() {
-        // ab.classList.remove("invisible");
-        // }
+      function myTopNavbarF() {
+        var x = document.getElementById("myTopNavbar");
+        if (x.className === "topNavbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "topNavbar";
+        }
+      }
 
- 
+      // -------------------------------------------------------------------------
+
+
+
+      //back-to-top button
+      let mybutton = document.getElementById("btn-back-to-top");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.addEventListener("click", backToTop);
+
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      // -------------------------------------------------------------------------
+
+      // form validation------------------------
+      var fnError = document.getElementById('fn-error');
+      var emailError = document.getElementById('email-error');
+      var phoneError = document.getElementById('phone-error');
+      var addressError = document.getElementById('address-error');
+      var cnameError = document.getElementById('cname-error');
+      var ccnumError = document.getElementById('ccnum-error');
+      var expmonthError = document.getElementById('expmonth-error');
+      var expyearError = document.getElementById('expyear-error');
+      var cvvError = document.getElementById('cvv-error');
+      var submitError = document.getElementById('submit-error');
+      
+      function ValidateName() {
+        var name = document.getElementById('fname').value;   //collect fname.value
+
+        if(name.length == 0){
+          fnError.innerHTML = 'Name is required';
+          return false;
+        } 
+        if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+          fnError.innerHTML = 'Write full name';
+          return false;
+        }
+        fnError.innerHTML = '<i class="fas fa-check-circle"></i>';
+        return true;
+      }
+
+      function ValidatePhone() {
+        var phone = document.getElementById('phone').value;  
+
+        if(phone.length == 0){
+          phoneError.innerHTML = 'Phone number is required';
+          return false;
+        } 
+        if(phone.length !== 8){
+          phoneError.innerHTML = 'Phone number should be 8 digits';
+          return false;
+        } 
+        if(!phone.match(/^[0-9]{8}$/)){
+          phoneError.innerHTML = 'Only digits, no space';
+          return false;
+        }
+        phoneError.innerHTML = '<i class="fas fa-check-circle"></i>';
+        return true;
+      }
+
+      function ValidateEmail() {
+        var email = document.getElementById('email').value;  
+
+        if(email.length == 0){
+          emailError.innerHTML = 'Email is required';
+          return false;
+        } 
+        if(!email.match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/i)){
+          emailError.innerHTML = 'Please check email format';
+          return false;
+        }
+        emailError.innerHTML = '<i class="fas fa-check-circle"></i>';
+        return true;
+      }
+
+      function ValidateAdr() {
+        var address = document.getElementById('adr').value;  
+
+        if(address.length == 0){
+          addressError.innerHTML = 'Address is required';
+          return false;
+        }
+        addressError.innerHTML = '<i class="fas fa-check-circle"></i>';
+        return true;
+      }
+
+      function ValidateCName() {
+        var cname = document.getElementById('cname').value;  
+
+        if(cname.length == 0){
+          cnameError.innerHTML = 'Name is required';
+          return false;
+        } 
+        if(!cname.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+          cnameError.innerHTML = 'Write full name';
+          return false;
+        }
+        cnameError.innerHTML = '<i class="fas fa-check-circle"></i>';
+        return true;
+      }
+
+      function ValidateCCNum() {
+        var ccnum = document.getElementById('ccnum').value;  
+
+        if(ccnum.length == 0){
+          ccnumError.innerHTML = 'Credit card numbber is required';
+          return false;
+        } 
+        if(ccnum.length <= 16 ){
+          ccnumError.innerHTML = 'Card number should be 16 digits';
+          return false;
+        } 
+        if(!ccnum.match(/^[0-9 -]{19}$/)){
+          ccnumError.innerHTML = 'Only digits with hyphen';
+          return false;
+        }
+        ccnumError.innerHTML = '<i class="fas fa-check-circle"></i>';
+        return true;
+      }
+
+      function ValidateExpMonth() {
+        var expmonth = document.getElementById('expmonth').value;  
+
+        if(expmonth.length == 0){
+          expmonthError.innerHTML = 'Exp Month is required';
+          return false;
+        } 
+        if(expmonth.length !== 2){
+          expmonthError.innerHTML = 'Exp Month should be 01 to 12';
+          return false;
+        } 
+        if(expmonth > 12){
+          expmonthError.innerHTML = 'Exp Month should be 01 to 12';
+          return false;
+        } 
+        if(!expmonth.match(/^[0-9]{2}$/)){
+          expmonthError.innerHTML = 'Only digits';
+          return false;
+        }
+        expmonthError.innerHTML = '<i class="fas fa-check-circle"></i>';
+        return true;
+      }
+
+      function ValidateExpYear() {
+        var expyear = document.getElementById('expyear').value;  
+
+        if(expyear.length == 0){
+          expyearError.innerHTML = 'Exp Year is required';
+          return false;
+        } 
+        if(expyear.length !== 4){
+          expyearError.innerHTML = 'Exp Year start from 2022';
+          return false;
+        } 
+        if(expyear < 2022){
+          expyearError.innerHTML = 'Exp Year start from 2022';
+          return false;
+        } 
+        if(!expyear.match(/^[0-9]{4}$/)){
+          expyearError.innerHTML = 'Only digits';
+          return false;
+        }
+        expyearError.innerHTML = '<i class="fas fa-check-circle"></i>';
+        return true;
+      }
+
+      function ValidateCVV() {
+        var cvv = document.getElementById('cvv').value;  
+
+        if(cvv.length == 0){
+          cvvError.innerHTML = 'CVV is required';
+          return false;
+        } 
+        if(cvv.length !== 3){
+          cvvError.innerHTML = 'CVV should be 3 digits';
+          return false;
+        } 
+        if(!cvv.match(/^[0-9]{3}$/)){
+          return false;
+        }
+        cvvError.innerHTML = '<i class="fas fa-check-circle"></i>';
+        return true;
+      }
+
+      function ValidateForm(){
+        if( !ValidateName() ||  !ValidateEmail() || !ValidatePhone() || !ValidateAdr() || !ValidateCName() || !ValidateCCNum() || !ValidateExpMonth() || !ValidateExpYear() || !ValidateCVV() ){
+          submitError.style.display ='block';
+          submitError.innerHTML ='please input information to submit';
+          setTimeout(function(){submitError.style.display ='none';}, 4000);
+          return false;
+        }
+        setTimeout(function(){document.getElementById('myModal').style.display='block'; 10000});
+        return false;
+      }
+
     </script>
 </body>
 </html>
