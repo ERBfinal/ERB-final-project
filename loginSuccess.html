@@ -345,9 +345,9 @@ body{
         background: lightgray;
     }
 
-    *{
+    /* *{
         font-family:Verdana, Geneva, Tahoma, sans-serif;
-    }
+    } */
 
     .form-box{
         width: 380px;
@@ -388,52 +388,53 @@ body{
 
 <body>
   <!-- navbar -->
-  <section id="header">
+ <section id="header">
 
-    <div class="logo"><img src="img/logo/logo001.png" width="150" alt=""></div>
+  <div class="logo"><a href="index.html"><img src="img/logo/logo001.png" width="150" alt="Pet patrol"></a></div>
 
-    <div class="topNavbar" id="myTopNavbar">
-      <a href="#bookNow">Book Now</a>
-      <div class="topDropdown">
-        <button class="dropbtn">Service
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="topDropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
+  <div class="topNavbar" id="myTopNavbar">
+    <a href="#bookNow">Book Now</a>
+    <a href="service.html">Service</a>
+    <a href="productList.html">Pet Product</a>
+
+    <!-- <div class="topDropdown">
+      <button class="dropbtn">Pet Product
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="topDropdown-content">
+        <a href="shoppingCart.html">Pet Product</a>
+        <a href="productList.html">Product</a>
+        <a href="#">Link 3</a>
       </div>
-      <a href="productList.html">Product</a>
-      <a href="shoppingCart.html">Shop</a>
-      <a href="aboutUs.html">About Us</a>
-      <a href="javascript:void(0);" class="icon" onclick="myTopNavbarF()">
-        <i class="fa fa-bars"></i>
-      </a>
+    </div> -->
+    <a href="aboutUs.html">About Us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myTopNavbarF()">
+      <i class="fa fa-bars"></i>
+    </a>
 
-      <div class="login-container">
-        <form action="login.html">
-          <button type="submit" class="btnLogin">Login</button>
-        </form>
-      </div>
-
-
-      <!-- Responsive Search Bar -->
-      <div class="search-container">
-        <form action="https://www.google.com">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-      </div>
-
-
-
-
-
+    <div class="login-container">
+      <form action="login.html">
+        <button type="submit" class="btnLogin">Login</button>
+      </form>
     </div>
 
 
-  </section>
+    <!-- Responsive Search Bar -->
+    <div class="search-container">
+      <form action="https://www.google.com">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+
+
+
+
+
+  </div>
+
+
+</section>
 <div style="padding:130px 50px 0 50px;">
     <div class="form-box">
         <div class="social-icons">
@@ -450,7 +451,12 @@ body{
   </div>
 
 
-
+<!-- back-to-top button -->
+<section id="back-to-top">
+  <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</section>
 
 
   

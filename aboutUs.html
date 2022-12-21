@@ -22,18 +22,18 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 <style>
-    h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6 {
   font-family: "Futura", "Nunito Sans", "Questrial";
 }
 
 p {
   font-family: "helvetica", "Jost", "Arimo";
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: lighter;
 }
 
 span {
   font-family: "helvetica", "Jost", "Arimo";
-  font-size: 12px;
 }
 
 /* header navbar */
@@ -192,7 +192,7 @@ span {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .topNavbar a:not(.item--clear), .topDropdown .dropbtn, .search-container, .login-container {
     display: none;
   }
@@ -203,7 +203,7 @@ span {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .topNavbar.responsive {
     position: relative;
   }
@@ -268,49 +268,6 @@ span {
   }
 }
 
-/* booking section */
-/* #booking {
-  padding: 130px 50px 0px 50px;
-}
-
-.title-image {
-  width: 100%;
-}
-
-.big-heading {
-  font-family: "Futura", "Nunito Sans", "Questrial";
-}
-
-.col-lg-6 .btn {
-  background-color: #FE7254;
-  border-color: #FE7254;
-  color: #fff;
-}
-
-/* different section
-#different {
-  padding: 50px 50px;
-}
-
-.different-column {
-  padding: 3% 2%;
-}*/
-
-/* do section 
-#do {
-  padding: 50px 50px;
-}*/
-
-/* mission section 
-#mission {
-  padding: 50px 50px;
-}*/
-
-/* location section
-#location {
-  padding: 50px 50px;
-} */
-
 /* footer */
 .footer-section {
   background-color: #a4b2bf;
@@ -347,10 +304,12 @@ span {
   background-color: #FE7254;
 }
 
-*{
+   
+/*----------------------------------------------------------------------------*/
+/* *{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         
-    }
+    } */
     h1{
        color:black; 
        padding: 30px 20px 50px 20px;
@@ -379,46 +338,55 @@ span {
 </head>
 
 <body>
-  <!-- navbar -->
-  <section id="header">
 
-    <div class="logo"><img src="img/logo/logo001.png" width="150" alt=""></div>
+ <!-- navbar -->
+ <section id="header">
 
-    <div class="topNavbar" id="myTopNavbar">
-      <a href="#bookNow">Book Now</a>
-      <div class="topDropdown">
-        <button class="dropbtn">Service
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="topDropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
+  <div class="logo"><a href="index.html"><img src="img/logo/logo001.png" width="150" alt="Pet patrol"></a></div>
+
+  <div class="topNavbar" id="myTopNavbar">
+    <a href="#bookNow">Book Now</a>
+    <a href="service.html">Service</a>
+    <a href="productList.html">Pet Product</a>
+
+    <!-- <div class="topDropdown">
+      <button class="dropbtn">Pet Product
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="topDropdown-content">
+        <a href="shoppingCart.html">Pet Product</a>
+        <a href="productList.html">Product</a>
+        <a href="#">Link 3</a>
       </div>
-      <a href="productList.html">Product</a>
-      <a href="shoppingCart.html">Shop</a>
-      <a href="aboutUs.html">About Us</a>
-      <a href="javascript:void(0);" class="icon" onclick="myTopNavbarF()">
-        <i class="fa fa-bars"></i>
-      </a>
+    </div> -->
+    <a href="aboutUs.html">About Us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myTopNavbarF()">
+      <i class="fa fa-bars"></i>
+    </a>
 
-      <div class="login-container">
-        <form action="login.html">
-          <button type="submit" class="btnLogin">Login</button>
-        </form>
-      </div>
-
-
-      <!-- Responsive Search Bar -->
-      <div class="search-container">
-        <form action="https://www.google.com">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-      </div>
+    <div class="login-container">
+      <form action="login.html">
+        <button type="submit" class="btnLogin">Login</button>
+      </form>
     </div>
-  </section>
+
+
+    <!-- Responsive Search Bar -->
+    <div class="search-container">
+      <form action="https://www.google.com">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+
+
+
+
+
+  </div>
+
+
+
 
   <div style="padding:130px 50px 0 50px;">
     <h1>Hello,We're Pet Patrol!</h1>
@@ -476,7 +444,7 @@ span {
     </div>
     
   </div>
-    <a href="booking.html" button type="submit" class="btn mt-auto" style="background: #FE7254 ;margin:0px 227px;">Book Now</a>
+    <a href="index.html" button type="submit" class="btn mt-auto" style="background: #FE7254 ;margin:0px 227px;">Book Now</a>
     
     <h1>Feedbacks!</h1>
 

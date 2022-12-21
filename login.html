@@ -18,12 +18,132 @@
   <script src="https://kit.fontawesome.com/c48ddcf42f.js" crossorigin="anonymous"></script>
 
 <style>
-    h1, h2, h3, h4, h5, h6 {
+   
+
+/* button */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  color: #fff;
+  background-color: #FE7254;
+}
+
+body{
+        background-color: lightgray;  
+    }
+    
+    /* *{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    } */
+    
+    .form-box{
+        width: 380px;
+        height: 500px;
+        position: relative;
+        margin: 6% auto;
+        background-color: white ;
+        padding: 5px;
+        overflow: hidden;
+    }
+
+    .button-box{
+       width:  150px;
+       margin: 35px auto;
+       position: relative;
+       box-shadow: 0 0 20px 9px #ff61241f;
+       border-radius: 30px;
+       
+    }
+
+    .toggle-btn{
+       padding: 10px;
+       background: transparent;
+       border: 0;
+       outline: none;
+       position: relative; 
+    }
+    
+    #btn{
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 78px;
+        height: 100%;
+        background: linear-gradient(to right, #FE7254 ,#ffad06);
+        border-radius: 30px;
+        transition: .5s;
+      
+    }
+
+    .social-icons img{
+        width: 30px;
+        margin: 1px 30px 1px 50px;
+        box-shadow: 0 0 20px 0 #7f7f7f3d;
+        border-radius: 50%;
+    }
+
+    .input-group{
+        top:180px;
+        position: absolute;
+        width: 280px;
+        transition: .5s;
+    }
+
+    .input-field{
+        width: 100;
+        padding: 10px 0;
+        margin: 5px 0;
+        border-left:0;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 1px solid #999;
+        outline:none;
+        background: transparent;
+        
+    }
+
+    .submit-btn{
+        width: 85%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin: 40px -20px;
+        background: linear-gradient(to right, #FE7254 ,#ffad06);
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+    }
+
+   /* .check-box{
+        margin: 30px 10px 30px 0;
+    }*/
+     /* span{
+        color: #777;
+        font-size: 12px;
+        bottom: 96px;
+        position: absolute;
+
+     } */
+
+     #login{
+        left: 80px;
+     }
+
+     #register{
+        left: 400px;
+     }
+
+/*------------------------------------------------------------------*/
+     h1, h2, h3, h4, h5, h6 {
   font-family: "Futura", "Nunito Sans", "Questrial";
 }
 
 p {
   font-family: "helvetica", "Jost", "Arimo";
+  font-size: 14px;
+  font-weight: lighter;
 }
 
 span {
@@ -31,7 +151,7 @@ span {
 }
 
 /* header navbar */
-.logo img{
+.logo {
   overflow: hidden;
   position: fixed;
   left: 50%;
@@ -186,7 +306,7 @@ span {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .topNavbar a:not(.item--clear), .topDropdown .dropbtn, .search-container, .login-container {
     display: none;
   }
@@ -197,7 +317,7 @@ span {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .topNavbar.responsive {
     position: relative;
   }
@@ -262,241 +382,60 @@ span {
   }
 }
 
-/* booking section */
-#booking {
-  padding: 130px 50px 0px 50px;
-}
-
-.title-image {
-  width: 100%;
-}
-
-.big-heading {
-  font-family: "Futura", "Nunito Sans", "Questrial";
-}
-
-.col-lg-6 .btn {
-  background-color: #FE7254;
-  border-color: #FE7254;
-  color: #fff;
-}
-
-/* different section */
-#different {
-  padding: 50px 50px;
-}
-
-.different-column {
-  padding: 3% 2%;
-}
-
-/* do section */
-#do {
-  padding: 50px 50px;
-}
-
-/* mission section */
-#mission {
-  padding: 50px 50px;
-}
-
-/* location section */
-#location {
-  padding: 50px 50px;
-}
-
-/* footer */
-.footer-section {
-  background-color: #a4b2bf;
-  color: #fff;
-  padding: 80px 50px;
-}
-
-.footer-heading {
-  padding-bottom: 10px;
-}
-
-.footer-text {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.footer-icon {
-  display: inline-block;
-  padding-top: 15px;
-}
-
-.footer-text2 {
-  display: inline-block;
-  margin-left: 50px;
-}
-
-/* button */
-#btn-back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-  color: #fff;
-  background-color: #FE7254;
-}
-
-body{
-        background-color: lightgray;  
-    }
-    
-    *{
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-    }
-    
-    .form-box{
-        width: 380px;
-        height: 500px;
-        position: relative;
-        margin: 6% auto;
-        background-color: white ;
-        padding: 5px;
-        overflow: hidden;
-    }
-
-    .button-box{
-       width:  163px;
-       margin: 35px auto;
-       position: relative;
-       box-shadow: 0 0 20px 9px #ff61241f;
-       border-radius: 30px;
-       
-    }
-
-    .toggle-btn{
-       padding: 10px;
-       background: transparent;
-       border: 0;
-       outline: none;
-       position: relative; 
-    }
-    
-    #btn{
-        top: 0;
-        left: 0;
-        position: absolute;
-        width: 88px;
-        height: 100%;
-        background: linear-gradient(to right, #FE7254 ,#ffad06);
-        border-radius: 30px;
-        transition: .5s;
-      
-    }
-
-    .social-icons img{
-        width: 30px;
-        margin: 1px 30px 1px 50px;
-        box-shadow: 0 0 20px 0 #7f7f7f3d;
-        border-radius: 50%;
-    }
-
-    .input-group{
-        top:180px;
-        position: absolute;
-        width: 280px;
-        transition: .5s;
-    }
-
-    .input-field{
-        width: 100;
-        padding: 10px 0;
-        margin: 5px 0;
-        border-left:0;
-        border-top: 0;
-        border-right: 0;
-        border-bottom: 1px solid #999;
-        outline:none;
-        background: transparent;
-        
-    }
-
-    .submit-btn{
-        width: 85%;
-        padding: 10px 30px;
-        cursor: pointer;
-        display: block;
-        margin: 40px -20px;
-        background: linear-gradient(to right, #FE7254 ,#ffad06);
-        border: 0;
-        outline: none;
-        border-radius: 30px;
-    }
-
-   /* .check-box{
-        margin: 30px 10px 30px 0;
-    }*/
-     span{
-        color: #777;
-        font-size: 12px;
-        bottom: 96px;
-        position: absolute;
-
-     }
-
-     #login{
-        left: 80px;
-     }
-
-     #register{
-        left: 400px;
-     }
-
 </style>
 </head>
 
 <body>
-  <!-- navbar -->
-  <section id="header">
-
-    <div class="logo"><img src="img/logo/logo001.png" width="150" alt=""></div>
-
-    <div class="topNavbar" id="myTopNavbar">
-      <a href="#bookNow">Book Now</a>
-      <div class="topDropdown">
-        <button class="dropbtn">Service
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="topDropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
-      <a href="productList.html">Product</a>
-      <a href="shoppingCart.html">Shop</a>
-      <a href="aboutUs.html">About Us</a>
-      <a href="javascript:void(0);" class="icon" onclick="myTopNavbarF()">
-        <i class="fa fa-bars"></i>
-      </a>
-
-      <div class="login-container">
-        <form action="login.html">
-          <button type="submit" class="btnLogin">Login</button>
-        </form>
-      </div>
-    
-
-      <!-- Responsive Search Bar -->
-       <div class="search-container">
-        <form action="https://www.google.com">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-      </div>  
-
   
+ <!-- navbar -->
+ <section id="header">
 
+  <div class="logo"><a href="index.html"><img src="img/logo/logo001.png" width="150" alt="Pet patrol"></a></div>
 
+  <div class="topNavbar" id="myTopNavbar">
+    <a href="#bookNow">Book Now</a>
+    <a href="service.html">Service</a>
+    <a href="productList.html">Pet Product</a>
 
+    <!-- <div class="topDropdown">
+      <button class="dropbtn">Pet Product
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="topDropdown-content">
+        <a href="shoppingCart.html">Pet Product</a>
+        <a href="productList.html">Product</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div> -->
+    <a href="aboutUs.html">About Us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myTopNavbarF()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <div class="login-container">
+      <form action="login.html">
+        <button type="submit" class="btnLogin">Login</button>
+      </form>
     </div>
 
 
-  </section>
+    <!-- Responsive Search Bar -->
+    <div class="search-container">
+      <form action="https://www.google.com">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+
+
+
+
+
+  </div>
+
+
+</section>
+
   <div style="padding: 130px 50px 0 50px;">
   <div class="form-box">
     <div class="button-box">
@@ -530,12 +469,12 @@ body{
 
 
 
-<!-- back-to-top button -->
-<section id="back-to-top">
-  <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-</section>
+  <!-- back-to-top button -->
+  <section id="back-to-top">
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </section>
 
 
   
