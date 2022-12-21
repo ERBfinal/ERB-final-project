@@ -25,73 +25,71 @@
 <body>
       
     <main>
-          <!-- navbar -------------->
-      <section id="header">
+  <!-- navbar -->
+  <section id="header">
 
-        <div class="logo"><img src="img/logo/logo001.png" width="150" alt=""></div>
+    <div class="logo"><a href="index.html"><img src="img/logo/logo001.png" width="150" alt="Pet patrol"></a></div>
 
-        <div class="topNavbar" id="myTopNavbar">
-          <a href="#bookNow">Book Now</a>
-          <div class="topDropdown">
-            <button class="dropbtn">Service
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="topDropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div>
-          <a href="#product">Product</a>
-          <a href="#shop">Shop</a>
-          <a href="#aboutUs">About Us</a>
-          <a href="javascript:void(0);" class="icon" onclick="myTopNavbarF()">
-            <i class="fa fa-bars"></i>
-          </a>
+    <div class="topNavbar" id="myTopNavbar">
+      <a href="maintenance.html">Book Now</a>
+      <a href="service.html">Service</a>
+      <a href="productList.html">Pet Product</a>
 
-          <div class="login-container">
-            <form action="/login.html">
-              <button type="submit" class="btnLogin">Login</button>
-            </form>
-          </div>
-
-
-          <!-- Responsive Search Bar -->
-          <div class="search-container">
-            <form action="https://www.google.com">
-              <input type="text" placeholder="Search.." name="search">
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-          </div>
+      <!-- <div class="topDropdown">
+        <button class="dropbtn">Pet Product
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="topDropdown-content">
+          <a href="shoppingCart.html">Pet Product</a>
+          <a href="productList.html">Product</a>
+          <a href="#">Link 3</a>
         </div>
-      </section>
+      </div> -->
+      <a href="aboutUs.html">About Us</a>
+      <a href="javascript:void(0);" class="icon" onclick="myTopNavbarF()">
+        <i class="fa fa-bars"></i>
+      </a>
 
-
-      <!--sticky social icon-->
-      <div class="icon-bar">
-        <a href="https://en-gb.facebook.com" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a> 
-        <a href="https://www.whatsapp.com/" target="_blank" class="whatsapp"><i class="fa fa-whatsapp"></i></a> 
-        <a href="https://accounts.google.com/v3/signin/identifier?dsh=S1930271173%3A1671115750617926&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fe-11-671fda5f4c58610ec905e7fe75cf3-3cb61e1421e892d23d04b032be5729a5b4df110b&service=mail&flowName=GlifWebSignIn&flowEntry=AddSession&hl=en-US" target="_blank" class="google"><i class="fa fa-google"></i></a> 
-        <a href="https://www.linkedin.com/?trk=guest_homepage-basic_nav-header-logo" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="https://www.youtube.com/" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a> 
+      <div class="login-container">
+        <form action="login.html">
+          <button type="submit" class="btnLogin">Login</button>
+        </form>
       </div>
 
+
+      <!-- Responsive Search Bar -->
+      <div class="search-container">
+        <form action="https://www.google.com">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+
+
+
+
+
+    </div>
+
+
+  </section>
       
       <!--tab menu-->
-      <div class="row tab-container">
+      <div style="padding-top:130px;"></div>
+      <div class="row tab-container"> 
         <div class="col-12">
           <h2>SERVICE</h2>
         </div>
         <div class="col-1"></div>
         <div class="col-4">
-          <a href="#menu1" class="tablinks" onclick="openMenu(event, 'menu1')"id="defaultOpen"><li>Internal Medicine and Vaccinations</li></a>
-          <a href="#menu2" class="tablinks" onclick="openMenu(event, 'menu2')"><li>On-Site Diagnostics X-ray CT</li></a>
-          <a href="#menu3" class="tablinks" onclick="openMenu(event, 'menu3')"><li>Ultrasonography and Echocardiology</li></a>
-          <a href="#menu4" class="tablinks" onclick="openMenu(event, 'menu4')"><li>Orthopaedics and Soft Tissue Surgery</li></a>
-          <a href="#menu5" class="tablinks" onclick="openMenu(event, 'menu5')"><li>Dentistry and Oral surgery</li></a>
-          <a href="#menu6" class="tablinks" onclick="openMenu(event, 'menu6')"><li>Endoscopy & surgery</li></a>
-          <a href="#menu7" class="tablinks" onclick="openMenu(event, 'menu7')"><li>Acupuncture and Pain Management</li></a>
-          <a href="#menu8" class="tablinks" onclick="openMenu(event, 'menu8')"><li>Ophthalmology</li></a>
+          <li class="tablinks" onclick="openMenu(event, 'menu1')"id="defaultOpen">Internal Medicine and Vaccinations</li>
+          <li class="tablinks" onclick="openMenu(event, 'menu2')">On-Site Diagnostics X-ray CT</li>
+          <li class="tablinks" onclick="openMenu(event, 'menu3')">Ultrasonography and Echocardiology</li>
+          <li class="tablinks" onclick="openMenu(event, 'menu4')">Orthopaedics and Soft Tissue Surgery</li>
+          <li class="tablinks" onclick="openMenu(event, 'menu5')">Dentistry and Oral surgery</li>
+          <li class="tablinks" onclick="openMenu(event, 'menu6')">Endoscopy & surgery</li>
+          <li class="tablinks" onclick="openMenu(event, 'menu7')">Acupuncture and Pain Management</li>
+          <li class="tablinks" onclick="openMenu(event, 'menu8')">Ophthalmology</li>
         </div>
 
         <div class="col-5"> 
@@ -105,11 +103,16 @@
             <button class="btn" id="myBtn" onclick="document.getElementById('myModal').style.display='block'">Read More</button>
           
             <!--modal-------------->
-            <div id="myModal" class="modal">
+            <div id="myModal" class="modal" >
               <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>    
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis inventore facere odit maiores! Rem iste delectus, fuga atque voluptate voluptas, officia, aspernatur deserunt ullam exercitationem distinctio! Praesentium molestias pariatur id.</p>
+              <div class="modal-content" style="width:80%;" >
+                <span class="close" onclick="document.getElementById('myModal').style.display='none' ">&times;</span>
+                <!-- <span class="close" onclick="document.getElementById('myModal').style='width:100px;display:none;' ">&times;</span>      -->
+                <h3>Regular Check-ups</h3>
+                <p>Regular examinations are an integral part of your pet's health care. Exams help us detect and treat medical problems early on, before they become more difficult and expensive to treat and decrease your pet's overall quality of life. 
+                  We recommend all pets undergo a complete examination at least once a year, which we will usually do at the time of your pets annual vaccination. Some pets with more serious conditions like heart problems, renal and liver issues will need to come more regularly.
+                   We will do a complete external examination of your pet. If necessary, we will recommend further diagnostic tests at our in house lab. The information we obtain during an exam helps us establish your pet's baseline level of health that we will record and compare in future visits. 
+                  Examinations are also a great time for you to discuss any queries you may have concerning your pets health, behavior and training.</p>
               </div>
             </div>
           </div>
@@ -124,9 +127,11 @@
             <!--modal, id cannot the same, if same cannot work-->
             <div id="myModal2" class="modal">
               <!-- Modal content -->
-              <div class="modal-content">
+              <div class="modal-content" style="width:80%;">
                 <span class="close" onclick="document.getElementById('myModal2').style.display='none'">&times;</span>    
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis inventore facere odit maiores! Rem iste delectus, fuga atque voluptate voluptas, officia, aspernatur deserunt ullam exercitationem distinctio! Praesentium molestias pariatur id.</p>
+                <h3>On-Site Diagnostics Laboratories</h3>
+                <p>Not everything can be detected from a physical examination. Blood and laboratory tests are often very helpful in making an accurate diagnosis.</p>
+                <p>At our clinics you won't have to wait days for laboratory analysis. Our fully equipped on-site laboratory allows us to perform advanced diagnostics such as electrolytes, blood chemistry, and complete blood count testing to help us determine the best treatment plan for your pet's medical condition. Many other hormone and viral blood tests can also be done on site. Our nurses are trained at performing laboratory tests and many results are available within minutes. Along with our laboratory capabilities, we also work with several outside referral laboratories and overseas based pathology specialists should your pet require more specialized testing.</p>
               </div>
             </div>
           </div>
@@ -141,9 +146,10 @@
             <!--modal, id cannot the same, if same cannot work-->
             <div id="myModal3" class="modal">
               <!-- Modal content -->
-              <div class="modal-content">
+              <div class="modal-content" style="width:80%;">
                 <span class="close" onclick="document.getElementById('myModal3').style.display='none'">&times;</span>    
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis inventore facere odit maiores! Rem iste delectus, fuga atque voluptate voluptas, officia, aspernatur deserunt ullam exercitationem distinctio! Praesentium molestias pariatur id.</p>
+                <h3>Ultrasound</h3>
+                <p>We offer advanced medical ultrasound imaging to help us diagnose your pet's medical condition without the trauma of invasive exploratory surgery. Ultrasound imaging can give us a clear and precise format from which to determine the most effective treatment options for your pet. Most frequently we use the ultrasound to examine the heart, and the integrity of organs in the abdominal cavity like the kidney, bladder, liver, spleen and pancreas. Ultrasound tells us a lot about the organs density, structure, even the blood flow within. Sometimes we also use ultrasound as a guide when we have to take samples from organs for further histopathology.</p>
               </div>
             </div>
           </div>
@@ -160,9 +166,10 @@
             <!--modal, id cannot the same, if same cannot work-->
             <div id="myModal4" class="modal">
               <!-- Modal content -->
-              <div class="modal-content">
+              <div class="modal-content" style="width:80%;">
                 <span class="close" onclick="document.getElementById('myModal4').style.display='none'">&times;</span>    
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis inventore facere odit maiores! Rem iste delectus, fuga atque voluptate voluptas, officia, aspernatur deserunt ullam exercitationem distinctio! Praesentium molestias pariatur id.</p>
+                <h3>Anesthesia and Monitoring</h3>
+                <p>In our continuing efforts to provide both you and your pet with the best and most advanced surgical care, we have invested heavily in the latest anesthetic administration and cardiovascular monitoring equipment. Surgeries are performed in our state-of-the-art operating room where the most up-to-date pain management techniques and the safest anesthetic agents are used.</p>
               </div>
             </div>
           </div>
@@ -181,9 +188,10 @@
             <!--modal, id cannot the same, if same cannot work-->
             <div id="myModal5" class="modal">
               <!-- Modal content -->
-              <div class="modal-content">
+              <div class="modal-content" style="width:80%;">
                 <span class="close" onclick="document.getElementById('myModal5').style.display='none'">&times;</span>    
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis inventore facere odit maiores! Rem iste delectus, fuga atque voluptate voluptas, officia, aspernatur deserunt ullam exercitationem distinctio! Praesentium molestias pariatur id.</p>
+                <h3>Pet Dental Care</h3>
+                <p>Routine dental care is often an neglected item of dog and cat general health care. After your pet reaches a few years of age, tarter begins to build up at the junction of his gums and teeth. It undermines the tissue and causes the gums to recede exposing more of the tooth root. The area then becomes infected. Infection leads to foul breath, as well as pain. If the situation is not soon remedied, gum infections, tooth abscesses and cheek ulcers will develop.</p>
               </div>
             </div>
           </div>
@@ -198,9 +206,10 @@
             <!--modal, id cannot the same, if same cannot work-->
             <div id="myModal6" class="modal">
               <!-- Modal content -->
-              <div class="modal-content">
+              <div class="modal-content" style="width:80%;">
                 <span class="close" onclick="document.getElementById('myModal6').style.display='none'">&times;</span>    
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis inventore facere odit maiores! Rem iste delectus, fuga atque voluptate voluptas, officia, aspernatur deserunt ullam exercitationem distinctio! Praesentium molestias pariatur id.</p>
+                <h3>Laparoscopic surgery</h3>
+                <p>One of the very important functions of endoscope is in the area of laparoscopic surgery, or minimal invasive surgery. Unlike traditional surgery method that opens up the body cavity, we can now perform surgery for patients by cutting a very small incision of approximately 1cm in length on the skin, penetrate the muscle layer into the body. It is done by passing an advanced endoscope with light, camera, insufflation functions into the body cavity, and using special instruments with small diameter to perform the tasks we need to do. Though it may sound more appealing than normal surgery, not all kind of surgery procedures can be done in laparocopic method. Our veterinarians will give you detail information and advice if your pets should have the need.</p>
               </div>
             </div>
           </div>
@@ -215,9 +224,10 @@
             <!--modal, id cannot the same, if same cannot work-->
             <div id="myModal7" class="modal">
               <!-- Modal content -->
-              <div class="modal-content">
+              <div class="modal-content" style="width:80%;">
                 <span class="close" onclick="document.getElementById('myModal7').style.display='none'">&times;</span>    
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis inventore facere odit maiores! Rem iste delectus, fuga atque voluptate voluptas, officia, aspernatur deserunt ullam exercitationem distinctio! Praesentium molestias pariatur id.</p>
+                <h3>Veterinary acupuncture</h3>
+                <p>Acupuncture promotes healing by stimulating nerve, increasing blood circulation, releasing certain hormone which is beneficial for recovery. When animals come in for acupuncture, they will need to stay with us for a few hours, giving them enough time to relax before and after treatment. Generally it is not painful for them while we insert the needles. It is a relatively safe treatment method with minimal side effect. Sometimes your pets will need to come in for a number of therapy in order to see obvious results. Our experienced veterinarians will advise you on whether acupuncture is beneficial for your pet, and the treatment plans.</p>
               </div>
             </div>
           </div>
@@ -235,9 +245,10 @@
             <!--modal, id cannot the same, if same cannot work-->
             <div id="myModal8" class="modal">
               <!-- Modal content -->
-              <div class="modal-content">
+              <div class="modal-content" style="width:80%;">
                 <span class="close" onclick="document.getElementById('myModal8').style.display='none'">&times;</span>    
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis inventore facere odit maiores! Rem iste delectus, fuga atque voluptate voluptas, officia, aspernatur deserunt ullam exercitationem distinctio! Praesentium molestias pariatur id.</p>
+                <h3>Ophthalmology</h3>
+                <p>At our clinic we are very fortunate to offer the services of two veterinary specialist ophthalmologists. Dr Anthony Goodhead and Dr Izak Venter are university lecturers and spend a few weeks consulting at our clinics every few months. Some of the clinical ophthalmic examinationswe offer include Schirmer tear test, fluorescein staining, tonometry, electroretinography,  ocular ultrasonography etc. Electroretinography or ERG in short, is to evaluate retinal function. It allows one to measure the electrical activity within the retina and thereby assess its functional integrity. This procedure is performed on all our cataract patients to ensure normal retinal function before cataract surgery. Ocular ultrasonography enables the examiner to visualize structures both within and behind the eye. This is particularly important in ocular conditions that make ophthalmoscopic examination difficult and in cases where there is pathology behind the eye.</p>
               </div>
             </div>
           </div>
@@ -255,17 +266,17 @@
 
             <div class="mySlides fade">
               <div class="numbertext">1 / 3</div>
-              <img src="img/facility1.jpg" style="width:100%">
+              <img src="img/slideshow/slide1.jpg" style="width:100%">
             </div>
 
             <div class="mySlides fade">
               <div class="numbertext">2 / 3</div>
-              <img src="img/facility2.jpg" style="width:100%">
+              <img src="img/slideshow/slide2.jpg" style="width:100%">
             </div>
 
             <div class="mySlides fade">
               <div class="numbertext">3 / 3</div>
-              <img src="img/health.jpg" style="width:100%">
+              <img src="img/slideshow/slide3.jpg" style="width:100%">
             </div>
 
           </div>
@@ -297,9 +308,11 @@
               <!--modal, id cannot the same, if same cannot work-->
               <div id="myModal9" class="modal">
                 <!-- Modal content -->
-                <div class="modal-content">
+                <div class="modal-content" style="width:50%;">
                   <span class="close" onclick="document.getElementById('myModal9').style.display='none'">&times;</span>    
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis inventore facere odit maiores! Rem iste delectus, fuga atque voluptate voluptas, officia, aspernatur deserunt ullam exercitationem distinctio! Praesentium molestias pariatur id.</p>
+                  <p>Please sign up and login in your account first. </p>
+                  <p>Then select your plan and settle the payment. </p>
+                  <p><mark>Please contact us for assistance if necessary.</mark></p>
                 </div>
               </div>
            </ul>
@@ -318,9 +331,11 @@
               <!--modal, id cannot the same, if same cannot work-->
               <div id="myModal10" class="modal">
                 <!-- Modal content -->
-                <div class="modal-content">
+                <div class="modal-content" style="width:50%;">
                   <span class="close" onclick="document.getElementById('myModal10').style.display='none'">&times;</span>    
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis inventore facere odit maiores! Rem iste delectus, fuga atque voluptate voluptas, officia, aspernatur deserunt ullam exercitationem distinctio! Praesentium molestias pariatur id.</p>
+                  <p>Please sign up and login in your account first. </p>
+                  <p>Then select your plan and settle the payment. </p>
+                  <p><mark>Please contact us for assistance if necessary.</mark></p>
                 </div>
               </div>
            </ul>
@@ -339,12 +354,14 @@
               <!--modal, id cannot the same, if same cannot work-->
               <div id="myModal10" class="modal">
                 <!-- Modal content -->
-                <div class="modal-content">
+                <div class="modal-content" style="width:50%;">
                   <span class="close" onclick="document.getElementById('myModal10').style.display='none'">&times;</span>    
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis inventore facere odit maiores! Rem iste delectus, fuga atque voluptate voluptas, officia, aspernatur deserunt ullam exercitationem distinctio! Praesentium molestias pariatur id.</p>
+                  <p>Please sign up and login in your account first. </p>
+                  <p>Then select your plan and settle the payment. </p>
+                  <p><mark>Please contact us for assistance if necessary.</mark></p>
                 </div>
               </div>
-           </ul>
+            </ul>
           </div>
       </div>  
 
@@ -355,42 +372,41 @@
         </button>
       </section>
 
-      <!-- Footer -->
+  <!-- Footer -->
 
-      <footer class="footer-section" id="footer">
+  <footer class="footer-section" id="footer">
 
-        <div class="row">
+    <div class="row">
 
-          <div class="col-lg-6 text-right align-self-center">
-            <img src="img/logo/logo002.png" width="200" alt="">
-          </div>
+      <div class="col-lg-6 text-right align-self-center">
+        <img src="img/logo/logo002.png" width="200" alt="">
+      </div>
 
-          <div class="col-lg-6">
-
-            <div class="footer-heading">
-              <h5>CONTACT US</h5>
-            </div>
-
-            <div class="footer-text">
-              <span>About Us</span><br>
-              <span>Contact Form</span><br>
-              <span>WhatsApp Us</span><br>
-            </div>
-
-            <div>
-              <div class="footer-icon align-bottom">
-                <i class="footericon fa-brands fa-twitter fa-xl pr-3"></i>
-                <i class="footericon fa-brands fa-facebook fa-xl pr-3"></i>
-                <i class="footericon fa-brands fa-instagram fa-xl pr-3"></i>
-              </div>
-
-              <div class="footer-text2">© Pet Patrol 2022
-              </div>
-            </div>
-          </div>
+      <div class="col-lg-6">
+        <div class="footer-heading">
+          <h5>CONTACT US</h5>
         </div>
-      </footer>
+        <div class="footer-text">
+          <a href="#location">Contact Form</a><br>
+          <a href="maintenance.html">Email Us</a><br>
+          <a href="maintenance.html">WhatsApp Us</a>
+        </div>
+        <div>
+          <div class="footer-icon align-bottom">
+            <a href="https://twitter.com/"><i class="footericon fa-brands fa-twitter fa-xl pr-3"></i></a>
+            <a href="https://www.facebook.com/"><i class="footericon fa-brands fa-facebook fa-xl pr-3"></i></a>
+            <a href="https://www.instagram.com/"><i class="footericon fa-brands fa-instagram fa-xl pr-3"></i></a>
+          </div>
+          <div class="footer-text2">© Pet Patrol 2022
+          </div>
 
+        </div>
+      </div>
+
+    </div>
+
+
+  </footer>
     </main>
 
      <!--jsscript-->
@@ -437,33 +453,32 @@
         document.documentElement.scrollTop = 0;
       }
 
-
       // tab menu control----------------------------------
 
       function openMenu(evt, menuNo) {
-      // Declare all variables
-      var i, tabcontent, tablinks;
+            // Declare all variables
+            var i, tabcontent, tablinks;
 
-      // Get all elements with class="tabcontent" and hide them
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
 
-      // Get all elements with class="tablinks" and remove the class "active"
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", " ");
+            }
 
-      // Show the current tab, and add an "active" class to the link that opened the tab
-      document.getElementById(menuNo).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-      // Get the element with id="defaultOpen" and click on it
-      document.getElementById("defaultOpen").click();
+            // Show the current tab, and add an "active" class to the link that opened the tab
+            document.getElementById(menuNo).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
 
-
+            
       // slideshow control-------------------------------------
       let slideIndex = 0;
       showSlides();
