@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pet Patrol</title>
+  <!-- css stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Jost&family=Nunito+Sans&family=Questrial&display=swap" rel="stylesheet">
+  <!-- favicon -->
+  <link rel="icon" href="img/logo/favicon.ico">
+  <!-- bootstrap script 4-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/c48ddcf42f.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <section id="header">
+
+    <div class="logo"><a href="index.html"><img src="img/logo/logo001.png" width="150" alt="Pet patrol"></a></div>
+
+    <div class="topNavbar" id="myTopNavbar">
+      <a href="#bookNow">Book Now</a>
+      <a href="service.html">Service</a>
+      <a href="productList.html">Pet Product</a>
+      <a href="aboutUs.html">About Us</a>
+      <a href="javascript:void(0);" class="icon" onclick="myTopNavbarF()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <div class="login-container">
+        <form action="login.html">
+          <button type="submit" class="btnLogin">Login</button>
+        </form>
+      </div>
+
+
+      <!-- Responsive Search Bar -->
+      <div class="search-container">
+        <form action="https://www.google.com">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+
+
+  <section id="bookingSchedule">
+    <div class="drName">
+      <h5>CHOOSE PROVIDER (OPTIONAL)</h5>
+      <button type="submit" class="btnBook btn1">All Providers</button>
+      <button type="submit" class="btnBook btn1">Dr. Alena</button>
+      <button type="submit" class="btnBook btn1">Dr. Alexander</button>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="month">
+              <h2>December 2022</h2>
+            </div>
+            <ul class="weekdays">
+              <li>Mon</li>
+              <li>Tue</li>
+              <li>Wed</li>
+              <li>Thu</li>
+              <li>Fri</li>
+              <li>Sat</li>
+              <li>Sun</li>
+            </ul>
+            <div class="day">
+              <ul class="days">
+                <li><button type="submit" class="btnCaN"></button></li>
+                <li><button type="submit" class="btnCaN"></button></li>
+                <li><button type="submit" class="btnCaN"></button></li>
+                <li><button type="submit" class="btnCa">1</button></li>
+                <li><button type="submit" class="btnCa">2</button></li>
+                <li><button type="submit" class="btnCa">3</button></li>
+                <li><button type="submit" class="btnCa">4</button></li>
+              </ul>
+              <ul class="days">
+                <li><button type="submit" class="btnCa">5</button></li>
+                <li><button type="submit" class="btnCa">6</button></li>
+                <li><button type="submit" class="btnCa">7</button></li>
+                <li><button type="submit" class="btnCa">8</button></li>
+                <li><button type="submit" class="btnCa">9</button></li>
+                <li><button type="submit" class="btnCa">10</button></li>
+                <li><button type="submit" class="btnCa">11</button></li>
+              </ul>
+              <ul class="days">
+                <li><button type="submit" class="btnCa">12</button></li>
+                <li><button type="submit" class="btnCa">13</button></li>
+                <li><button type="submit" class="btnCa">14</button></li>
+                <li><button type="submit" class="btnCa">15</button></li>
+                <li><button type="submit" class="btnCa">16</button></li>
+                <li><button type="submit" class="btnCa">17</button></li>
+                <li><button type="submit" class="btnCa">18</button></li>
+              </ul>
+              <ul class="days">
+                <li><button type="submit" class="btnCa">19</button></li>
+                <li><button type="submit" class="btnCa">20</button></li>
+                <li><button type="submit" class="btnCa">21</button></li>
+                <li><button type="submit" class="btnCa">22</button></li>
+                <li><button type="submit" class="btnCa">23</button></li>
+                <li><button type="submit" class="btnCa">24</button></li>
+                <li><button type="submit" class="btnCa">25</button></li>
+              </ul>
+              <ul class="days">
+                <li><button type="submit" class="btnCa">26</button></li>
+                <li><button type="submit" class="btnCa">27</button></li>
+                <li><button type="submit" class="btnCa">28</button></li>
+                <li><button type="submit" class="btnCa">29</button></li>
+                <li><button type="submit" class="btnCa">30</button></li>
+                <li><button type="submit" class="btnCa">31</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5>MORNING</h5>
+            <button type="submit" class="btnBook btn1">8:00 AM</button>
+            <button type="submit" class="btnBook btn1">9:00 AM</button>
+            <button type="submit" class="btnBook btn1">10:00 AM</button>
+            <h5>AFTERNOON</h5>
+            <button type="submit" class="btnBook btn1">12:00 PM</button>
+            <button type="submit" class="btnBook btn1">1:00 PM</button>
+            <button type="submit" class="btnBook btn1">2:00 PM</button>
+            <button type="submit" class="btnBook btn1">3:00 PM</button>
+            <h5>EVENING</h5>
+            <button type="submit" class="btnBook btn1">6:00 PM</button>
+            <button type="submit" class="btnBook btn1">7:00 PM</button>
+            <button type="submit" class="btnBook btn1">8:00 PM</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="next">
+    <button type="button" class="buttonNext"> <a href="maintenance.html">Next</a></button>
+    </div>
+
+
+  </section>
+
+
+
+  <!-- back-to-top button -->
+  <section id="back-to-top">
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="footer-section" id="footer">
+
+    <div class="row">
+
+      <div class="col-lg-6 text-right align-self-center">
+        <img src="img/logo/logo002.png" width="200" alt="">
+      </div>
+
+      <div class="col-lg-6">
+        <div class="footer-heading">
+          <h5>CONTACT US</h5>
+        </div>
+        <div class="footer-text">
+          <span>About Us</span><br>
+          <span>Contact Form</span><br>
+          <span>WhatsApp Us</span><br>
+        </div>
+        <div>
+          <div class="footer-icon align-bottom">
+            <i class="footericon fa-brands fa-twitter fa-xl pr-3"></i>
+            <i class="footericon fa-brands fa-facebook fa-xl pr-3"></i>
+            <i class="footericon fa-brands fa-instagram fa-xl pr-3"></i>
+          </div>
+          <div class="footer-text2">© Pet Patrol 2022
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </footer>
+
+
+
+  <script>
+    //   get all the elements on the basis of their class name
+    let btn1 = document.getElementsByClassName("btn1");
+
+    for (var i = 0; i < btn1.length; i++) {
+      (function(index) {
+        btn1[index].addEventListener("click", function() {
+          console.log("Clicked Button: " + index);
+
+          let isPresent = false;
+
+          //   Check if the class is present or not
+          this.classList.forEach(function(e, i) {
+            if (e == "button-focus") {
+              isPresent = true;
+            } else {
+              isPresent = false;
+            }
+          });
+
+          //   toggle the presence of class on the basis of the isPresent variable
+          if (isPresent) {
+            this.classList.remove("button-focus");
+          } else {
+            this.classList.add("button-focus");
+          }
+        });
+      })(i);
+    }
+  </script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+
+</html>
