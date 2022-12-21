@@ -479,17 +479,17 @@ body{
           <button type="submit" class="btnLogin">Login</button>
         </form>
       </div>
-
+    
 
       <!-- Responsive Search Bar -->
-      <div class="search-container">
+       <div class="search-container">
         <form action="https://www.google.com">
           <input type="text" placeholder="Search.." name="search">
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
-      </div>
+      </div>  
 
-
+  
 
 
 
@@ -504,16 +504,21 @@ body{
         <button type="button" class="toggle-btn"  onclick="login()">Log In</button>
         <button type="button" class="toggle-btn" onclick="register()">Register</button>
     </div>
+
+    <!-- social media icon -->
     <div class="social-icons">
         <a href="https://www.facebook.com/" target="blank;"> <img src="img/facebook.png"></a>
         <a href="https://www.google.com/" target="blank;"><img src="img/google.png"></a>
         <a href="https://www.twitter.com/" target="blank;"><img src="img/twitter.png"></a>
     </div>
+
+    <!-- login form -->
     <form id="login"  class="input-group" action="./loginSuccess.html" method="get">
         <input type="text" class="input-field" name="username" placeholder="User Id" required>
         <input type="text" class="input-field" name="password" placeholder="Enter Password" required>
         <button type="submit" class="submit-btn">Log in</button>
     </form>
+    <!-- registration form -->
     <form id="register" class="input-group" action="./login.html">
         <input type="text" class="input-field" placeholder="User Id" required>
         <input type="email" class="input-field" placeholder="Email Id" required>
@@ -525,7 +530,12 @@ body{
 
 
 
-
+<!-- back-to-top button -->
+<section id="back-to-top">
+  <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</section>
 
 
   
@@ -572,6 +582,7 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
+// login success
 let form = document.querySelector("#login");
         let username = form.elements[0]
         let password = form.elements[1]
@@ -603,6 +614,9 @@ let form = document.querySelector("#login");
                 password.placeholder = "Invalid password";
             };
         };
+
+
+        // toggle lonin and registration form
         var x= document.getElementById("login");
         var y= document.getElementById("register");
         var z= document.getElementById("btn");
