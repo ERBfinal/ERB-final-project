@@ -231,7 +231,7 @@ span {
 }
 
 /* booking section */
-#booking, #sorry, #bookingSchedule {
+#booking, #sorry, #bookingSchedule, #success {
   padding: 130px 50px 100px 50px;
 }
 
